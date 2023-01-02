@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">                                            
-            <div class="card" style="padding: 2rem;" >
+            <div class="card cust-card" style="padding: 2rem;" >
                     <div class="card-body" style="height: 42rem !important;">
                    <div class="row">
                     <div class="col-md-12">
