@@ -12,7 +12,7 @@ if( isset($_POST["caseid"])    )
   if($connect)
   {
 
-    $query = mysqli_query($connect,"SELECT `caseid`, `noofmales`, `nooffemales`, `noofdependents`, `noofpersonearning`, `familyincome`, `monthlyration`, `monthlyhealthcare`, `monthlyeducation`, `otherexpenses`, `totalexpenses`, `monthlysirplusdeficit`, `cashbank`, `goldsilver`, `provisionalfund`, `paidcommittee`, `securitydeposit`, `loangiven`, `othercurrency`, `tradeassets`, `unnecessaryflats`, `extramobilephones`, `extravehicles`, `extralivestocks`, `totalcountableassets`, `rentpayable`, `securitydepositpayable`, `payableamountcommittee`, `utilitybillspayable`, `loanpayable`, `ttldductliabilities`, `totaldeductableliabiliities`, `netcoutableassets`, `currentzakatevaluation`, `muslim`, `syed`, `agakani`, `zakatevaluation`, `amountapplied`, `foamount`, `foremarks2`, `executiverelationship`, `referencename`, `refferedby`, `intension`, `experience`, `capability`, `training`, `otherremarks`, `doc`, `casetype`, `casedescription`, `name`, `fathersname`, `cnic`, `contact`, `email`, `status`, `panelremarks`, `panelamount`, `netsalary`, `address`, `formid`, `foremarks`, `nob`, `nobdesc`, `city` FROM `checking` WHERE caseid = ".$caseid.";");
+    $query = mysqli_query($connect,"SELECT `caseid`, `employment`, `noofmales`, `nooffemales`, `noofdependents`, `noofpersonearning`, `familyincome`, `monthlyration`, `monthlyhealthcare`, `monthlyeducation`, `otherexpenses`, `totalexpenses`, `monthlysirplusdeficit`, `cashbank`, `goldsilver`, `provisionalfund`, `paidcommittee`, `securitydeposit`, `loangiven`, `othercurrency`, `tradeassets`, `unnecessaryflats`, `extramobilephones`, `extravehicles`, `extralivestocks`, `totalcountableassets`, `rentpayable`, `securitydepositpayable`, `payableamountcommittee`, `utilitybillspayable`, `loanpayable`, `ttldductliabilities`, `totaldeductableliabiliities`, `netcoutableassets`, `currentzakatevaluation`, `muslim`, `syed`, `agakani`, `zakatevaluation`, `amountapplied`, `foamount`, `foremarks2`, `executiverelationship`, `referencename`, `refferedby`, `intension`, `experience`, `capability`, `training`, `otherremarks`, `doc`, `casetype`, `casedescription`, `name`, `fathersname`, `cnic`, `contact`, `email`, `status`, `panelremarks`, `panelamount`, `netsalary`, `address`, `formid`, `foremarks`, `nob`, `nobdesc`, `city` FROM `checking` WHERE caseid = ".$caseid.";");
 
     if (!$query
     )  {
@@ -33,6 +33,7 @@ if( isset($_POST["caseid"])    )
         $data ["email"] = $row["email"];
         $data ["name"] = $row["name"];
         $data ["fathersname"] = $row["fathersname"];
+        $data ["employment"] = $row["employment"];
         $data ["contact"] = $row["contact"];
         $data ["cnic"] = $row["cnic"];
         $data ["casetype"] = $row["casetype"];

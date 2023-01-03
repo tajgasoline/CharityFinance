@@ -19,6 +19,26 @@
                                 </div>
                             </div><!--end form-group--> 
                             <div class="form-group row">
+                                            <label for="email"
+                                                class="col-sm-4 col-form-label text-align-left">Employee/UnEmployee</label>
+                                            <div class="col-sm-8 ">
+                                                <div class="custom-checkbox">
+                                                    <input type="checkbox" class="form-check-input" value="yes"
+                                                        id="employeec">
+                                                </div>
+                                                <select class="select2 form-control mb-3 custom-select "
+                                                    style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true"
+                                                    disabled id="employment">
+                                                    <option value="null" selected disabled>Select Here</option>
+                                                    <option value="Employee">Employee</option>
+                                                    <option value="UnEmployee">UnEmployee</option>
+                                                   
+                                                </select>
+                                                <span class="help-block custom-block-hide"
+                                                    id="66v"><small></small></span>
+                                            </div>
+                                        </div><!--end form-group-->
+                            <div class="form-group row">
                                 <label for="email" class="col-sm-4 col-form-label text-align-left">Email</label>
                                 <div class="col-sm-8 ">
                                    <div class="input-group mb-3">
@@ -185,10 +205,10 @@
 </div><!--end card-body-->
 <div class="row login-logo">
     <div class="col-md-3"></div>
-   <div class="col-md-3" style="padding:0rem 1rem 0rem 6rem;">
+   <div class="col-md-3 cust-card-left-button">
         <button class="btn btn-primary  btn-block waves-effect waves-light" value="page1" onclick="switching(this.value);" type="button" disabled>Preview</button>
     </div>
- <div class="col-md-3" style="padding:0rem 6rem 0rem 1rem;">
+ <div class="col-md-3 cust-card-right-button">
         <button class="btn btn-primary  btn-block waves-effect waves-light" value="page2" onclick="switching(this.value);" id="page-two-button" type="button">Next</button>
     </div>
     <div class="col-md-3"></div>

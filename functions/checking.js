@@ -770,6 +770,7 @@ function btnsubmit2() {
     var email = $("#email").val();
     var fullname = $("#fullname").val();
     var fathersname = $("#fathersname").val();
+    var employment = $("#employment").val();
     var contact = $("#contact").val();
     var cnic = $("#cnic").val();
     var casetype = $("#casetype").val();
@@ -958,6 +959,8 @@ function btnsubmit2() {
     $("#64v").css("display", "");
     $("#city").css("border-color", "");
     $("#59v").css("display", "");
+    $("#employment").css("border-color", "");
+    $("#66v").css("display", "");
     // ExecutiveRelationship
     // ReferenceName
     // RefferedBy
@@ -1388,6 +1391,12 @@ function btnsubmit2() {
         $("#65v").text("Invalid Case Description.");
         $("#casedesc").css("border-color", "red");
         $("#casedesc").focus();
+    }
+    else if (employment == "") {
+        $("#66v").css("display", "block");
+        $("#66v").text("Invalid Case Description.");
+        $("#employement").css("border-color", "red");
+        $("employement").focus();
     }
     else {
     }

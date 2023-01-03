@@ -74,6 +74,7 @@ if (
 // $cnic1 = htmlentities($_POST["cnic1"]; 
 // $contact1 = htmlentities($_POST["contact1"]; 
 // $email1 = htmlentities($_POST["email1"]; 
+	$employee= htmlentities($_POST["employee"]);
 	$NoofMales = htmlentities($_POST["NoofMales"]);
 	$NoofFemales = htmlentities($_POST["NoofFemales"]);
 	$NoofDependents = htmlentities($_POST["NoofDependents"]);
@@ -126,6 +127,7 @@ if (
 	$email = htmlentities($_POST["email"]);
 	$fullname = htmlentities($_POST["fullname"]);
 	$fathersname = htmlentities($_POST["fathersname"]);
+
 	$contact = htmlentities($_POST["contact"]);
 	$cnic = htmlentities($_POST["cnic"]);
 	$casetype = htmlentities($_POST["casetype"]);
@@ -152,7 +154,7 @@ if (
 			$duplicatecheck = $duplicatecheck;
 		}
 		// if ($duplicatecheck == "") {
-			$stmt = $connect->prepare("INSERT INTO `tblmainform`(  `NoofMales`, `NoofFemales`,
+			$stmt = $connect->prepare("INSERT INTO `tblmainform`(  `employment`, `NoofMales`, `NoofFemales`,
 				`NoofDependents`, `NoofPersonEarning`, `FamilyIncome`, `MonthlyRation`,
 				`MonthlyHealthCare`, `MonthlyEducation`, `OtherExpenses`, `TotalExpenses`,
 				`MonthlySirplusdeficit`, `CashBank`, `GoldSilver`, `ProvisionalFund`,
@@ -163,10 +165,11 @@ if (
 				`LoanPayable`, `TtlDductLiabilities`, `TotalDeductableLiabiliities`,
 				`NetCoutableAssets`, `CurrentZakatEvaluation`,`Muslim`,
 				`Syed`, `AgaKani`, `ZakatEvaluation`,`AmountApplied`,
-				`FOAmount`, `FORemarks2`,`ExecutiveRelationship`, `ReferenceName`, `RefferedBy`, `Intension`, `Experience`, `Capability`, `Training`, `OtherRemarks`,`DOC`, `casetype`, `caseDescription`, `Name`, `Fathersname`, `cnic`, `contact`, `email`, `status`, `address`, `netsalary`, `NOB`, `NOBdesc`, `city`) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,Now(),?,?,?,?,?,?,?,'New',?,?,?,?,?)");
+				`FOAmount`, `FORemarks2`,`ExecutiveRelationship`, `ReferenceName`, `RefferedBy`, `Intension`, `Experience`, `Capability`, `Training`, `OtherRemarks`,`DOC`, `casetype`, `caseDescription`, `Name`, `Fathersname`, `cnic`, `contact`, `email`, `status`, `address`, `netsalary`, `NOB`, `NOBdesc`, `city`) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,Now(),?,?,?,?,?,?,?,'New',?,?,?,?,?)");
 			$stmt->bind_param(
-				'iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiissssiisssssssssssssssssssss',
+				'siiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiissssiisssssssssssssssssssss',
 				// $id1,
+				$employee,
 				$NoofMales,
 				$NoofFemales,
 				$NoofDependents,
@@ -228,6 +231,7 @@ if (
 				$natureofbusiness,
 				$otherbusiness,
 				$city
+				
 			);
 			$stmt->execute();
 			if ($stmt == true) {

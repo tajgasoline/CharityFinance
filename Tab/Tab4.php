@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">                                            
-            <div class="card" style="padding: 2rem;">
+            <div class="card cust-card" style="padding: 2rem;">
                  <div class="card-body" style="height: 41rem !important;">
                  <div class="row">
                      <label for="example-text-input" class="col-lg-10 col-form-label  C-Modal-Data-title text-center">Deductable Liabilities</label>
@@ -75,10 +75,10 @@
 </div><!--end card-body-->
     <div class="row login-logo">
                 <div class="col-md-3"></div>
-               <div class="col-md-3" style="padding:0rem 1rem 0rem 6rem;">
+               <div class="col-md-3 cust-card-left-button">
                     <button class="btn btn-primary  btn-block waves-effect waves-light" value="page3" onclick="switching(this.value);" type="button"  >Preview</button>
                 </div>
-               <div class="col-md-3" style="padding:0rem 6rem 0rem 1rem;">
+               <div class="col-md-3 cust-card-right-button">
                     <button class="btn btn-primary  btn-block waves-effect waves-light" value="page5" onclick="switching(this.value);" id="page-two-button" type="button">Next</button>
                 </div>
                 <div class="col-md-3"></div>

@@ -8,7 +8,7 @@ $message="";
 if($connect)
 {
 
-    $query = mysqli_query($connect,"SELECT `CaseID`, `DOC`, `casetype`, `caseDescription`, `Name`, `Fathersname`, `cnic`, `contact`, `email`, `status` FROM `tblcase`");
+    $query = mysqli_query($connect,"SELECT `CaseID`, `employment`, `DOC`, `casetype`, `caseDescription`, `Name`, `Fathersname`, `cnic`, `contact`, `email`, `status` FROM `tblcase`");
 
     if (!$query
   )  {

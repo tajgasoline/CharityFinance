@@ -10,7 +10,7 @@ if (
 	// isset($_POST["cnic1"]) && 
 	// isset($_POST["contact1"]) && 
 	// isset($_POST["email1"]) &&  
-
+	isset($_POST["employment"]) &&
 	isset($_POST["NoofMales"]) &&
 	isset($_POST["NoofFemales"]) &&
 	isset($_POST["NoofDependents"]) &&
@@ -84,7 +84,7 @@ if (
 // $cnic1 = filter_var(htmlentities($_POST["cnic1"]),FILTER_SANITIZE_MAGIC_QUOTES); 
 // $contact1 = filter_var(htmlentities($_POST["contact1"]),FILTER_SANITIZE_MAGIC_QUOTES); 
 // $email1 = filter_var(htmlentities($_POST["email1"]),FILTER_SANITIZE_MAGIC_QUOTES); 
-
+	$employment = filter_var(htmlentities($_POST["employment"]), FILTER_SANITIZE_MAGIC_QUOTES);
 	$NoofMales = filter_var(htmlentities($_POST["NoofMales"]), FILTER_SANITIZE_MAGIC_QUOTES);
 	$NoofFemales = filter_var(htmlentities($_POST["NoofFemales"]), FILTER_SANITIZE_MAGIC_QUOTES);
 	$NoofDependents = filter_var(htmlentities($_POST["NoofDependents"]), FILTER_SANITIZE_MAGIC_QUOTES);
@@ -188,7 +188,7 @@ if (
 
 		if ($duplicatecheck == "") {
 
-			$stmt = $connect->prepare("INSERT INTO `checking`(  `CaseID`,`NoofMales`, `NoofFemales`,
+			$stmt = $connect->prepare("INSERT INTO `checking`(  `CaseID`, `employment`, `NoofMales`, `NoofFemales`,
 	`NoofDependents`, `NoofPersonEarning`, `FamilyIncome`, `MonthlyRation`,
 	`MonthlyHealthCare`, `MonthlyEducation`, `OtherExpenses`, `TotalExpenses`,
 	`MonthlySirplusdeficit`, `CashBank`, `GoldSilver`, `ProvisionalFund`,
@@ -199,10 +199,11 @@ if (
 	`LoanPayable`, `TtlDductLiabilities`, `TotalDeductableLiabiliities`,
 	`NetCoutableAssets`, `CurrentZakatEvaluation`,`Muslim`,
 	`Syed`, `AghaKhani`, `ZakatEvaluation`,`AmountApplied`,
-	`FOAmount`, `FORemarks2`,`ExecutiveRelationship`, `ReferenceName`, `RefferedBy`, `Intention`, `Experience`, `Capability`, `Training`, `OtherRemarks`, `Casetype`, `CaseDescription`, `Name`, `FathersName`, `Cnic`, `Contact`, `Email`, `Status`, `Address`, `NetSalary`, `NOB`, `NOBDesc`, `City`, `DOC`) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,'New',?,?,?,?,?,Now())");
+	`FOAmount`, `FORemarks2`,`ExecutiveRelationship`, `ReferenceName`, `RefferedBy`, `Intention`, `Experience`, `Capability`, `Training`, `OtherRemarks`, `Casetype`, `CaseDescription`, `Name`, `FathersName`, `Cnic`, `Contact`, `Email`, `Status`, `Address`, `NetSalary`, `NOB`, `NOBDesc`, `City`, `DOC`) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,'New',?,?,?,?,?,Now())");
 			$stmt->bind_param(
-				'ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss',
+				'sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss',
 				$id1,
+				$employment,
 				$NoofMales,
 				$NoofFemales,
 				$NoofDependents,

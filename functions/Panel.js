@@ -16,6 +16,7 @@ function tblcases() {
         "columns": [
             { "data": "Empty" },
             { "data": "CaseID" },
+            
             { "data": "DOC" },
             { "data": "casetype" },
             { "data": "caseDescription" },
@@ -45,7 +46,7 @@ $(document).ready(function () {
         var caseid = $(this).data("caseid");
         $("#id1").val($(this).attr("id"));
         $("#caseid").val($(this).data("caseid"));
-
+        $("#employment").val($(this).data("employment"));
         $("#email").val($(this).data("email"));
         $("#fullname").val($(this).data("name"));
         $("#fathersname").val($(this).data("fathersname"));
@@ -193,7 +194,7 @@ if(result.experience == "Yes"){$("#Experiencec").prop("checked", true);}
 if(result.training ==  "Yes"){$("#Trainingc").prop("checked", true);} 
 if(result.capability == "Yes"){$("#Capabilityc").prop("checked", true);} 
 if(result.otherremarks ==  "Yes"){$("#OtherRemarksc").prop("checked", true);} 
-
+if(result.employment ==  "Yes"){$("#employmentc").prop("checked", true);} 
 
 
 
@@ -415,6 +416,10 @@ function onloadss(){
     var fathersnamec = '';
     if($('#fathersnamec').is(':checked') == true){fathersnamec = 'Yes';}
     else {fathersnamec = 'No';}
+
+    var employeec = '';
+    if($('#employeec').is(':checked') == true){employeec = 'Yes';}
+    else {employeec = 'No';}
 
     var contactc = '';
     if($('#contactc').is(':checked') == true){contactc = 'Yes';}
@@ -653,14 +658,21 @@ function onloadss(){
     if($('#OtherRemarksc').is(':checked') == true){OtherRemarksc = 'Yes';}
     else {OtherRemarksc = 'No';}
 
+
+    var employmentc = '';
+    if($('#employmentc').is(':checked') == true){employmentc = 'Yes';}
+    else {employmentc = 'No';}
+
     $.ajax({
         url: "api/FOChecking.php",
         method: "POST",
         data: {
           caseid:caseid,
+          employmentc:employmentc,
            emailc:emailc,
                   fullnamec:fullnamec,
                   fathersnamec:fathersnamec,
+                  employeec:employeec,
                   contactc:contactc,
                   cityc:cityc,
                   NetSalaryc:NetSalaryc,

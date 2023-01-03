@@ -752,6 +752,7 @@ function btnsubmit2() {
     var natureofbusiness = $("#natureofbusiness").val();
     var otherbusiness = $("#otherbusiness").val();
     var city = $("#city").val();
+    var employee = $('#employee').val();
 
 
 
@@ -931,6 +932,9 @@ function btnsubmit2() {
     $("#64v").css("display", "");
     $("#city").css("border-color", "");
     $("#59v").css("display", "");
+    $("#employee").css("border-color", "");
+    $("#66v").css("display", "");
+
     // ExecutiveRelationship
     // ReferenceName
     // RefferedBy
@@ -1363,7 +1367,13 @@ function btnsubmit2() {
         $("#casedesc").css("border-color", "red");
         $("#casedesc").focus();
     }
-    else {
+    else if (employee == "") {
+        $("#66v").css("display", "block");
+        $("#66v").text("Invalid Employement");
+        $("#employee").css("border-color", "red");
+        $("#employee").focus();
+    }
+   {
     }
 
 
@@ -1448,7 +1458,8 @@ function btnsubmit2() {
                     Address: Address,
                     natureofbusiness: natureofbusiness,
                     otherbusiness: otherbusiness,
-                    city: city
+                    city: city,
+                    employee: employee
 
 
                 },

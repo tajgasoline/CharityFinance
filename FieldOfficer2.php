@@ -28,8 +28,8 @@ session_start();
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-    <!--     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
-    <script src="assets/ajax.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> 
+    <!-- <script src="assets/ajax.js"></script> -->
 </head>
 
 <body>
@@ -57,18 +57,11 @@ session_start();
                 </div>
                 <!-- end page title end breadcrumb -->
                 <div class="col-lg-12">
-
-
                     <div class="card">
                         <div class="card-body">
-                            <div class="row">
+                         <div class="text-left">
 
-
-                            </div>
-                            <div class="text-left">
-
-                                <table id="datatable" class="table table-bordered dt-responsive nowrap"
-                                    style=" overflow-x: auto;border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                <table id="datatable" class="table table-bordered  nowrap" style="width: 100%;">
                                     <thead>
                                         <tr>
                                             <th></th>
@@ -101,7 +94,7 @@ session_start();
                                     <button type="button" class="close" id="btncancel" data-dismiss="modal"
                                         aria-hidden="true">×</button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body cust-modal-body">
 
                                     <!-- Field Officer Fields -->
                                     <div class="row">
@@ -147,7 +140,7 @@ session_start();
                                     <button type="button" class="close" data-dismiss="modal" id="btncanel2"
                                         aria-hidden="true">×</button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body ">
                                     <div class="col-lg-12">
                                         <div class="form-group row">
                                             <label for="example-text-input"
@@ -189,7 +182,7 @@ session_start();
 
 
                 </div><!-- container -->
-                <?php include("footer.php"); ?>
+                <?php include("../footer.php"); ?>
             </div>
             <!-- end page content -->
         </div>

@@ -1,16 +1,17 @@
 <?php
-    // session_start();
-    // include('connect.php');
-    // error_reporting(1);
-    // if( !isset($_SESSION['userid']) ){
-    //     header("location: Login.php");
-    // }else{ 
-    //     $userid = $_SESSION['userid'];
-    // }
+// session_start();
+// include('connect.php');
+// error_reporting(1);
+// if( !isset($_SESSION['userid']) ){
+//     header("location: Login.php");
+// }else{ 
+//     $userid = $_SESSION['userid'];
+// }
 $_SESSION['role'] = 'Test Role';
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <title>Taj Gasoline</title>
@@ -29,103 +30,105 @@ $_SESSION['role'] = 'Test Role';
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 </head>
+
 <body>
     <!-- Top Bar Start -->
     <?php include "navbar.php"; ?>
     <div class="page-wrapper">
-       <?php include "leftbar.php"; ?>
-       <!-- Left Sidenav -->
-       <!-- Page Content-->
-       <div class="page-content">
-        <div class="container-fluid">
-            <!-- Page-Title -->
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="page-title-box">
-                        <div class="float-right">
-                            <ol class="breadcrumb">
-                             <li class="breadcrumb-item"><a href="javascript:void(0);">Home</a></li>
-                             <li class="breadcrumb-item active">Home</li>
-                         </ol>
-                     </div>
-                     <h4 class="page-title">Welcome <?php echo $_SESSION['role'];?> </h4>
-                 </div><!--end page-title-box-->
-             </div><!--end col-->
-         </div>
-
-         <!-- end page title end breadcrumb -->
-         <div class="col-lg-12" >
-            <div class="card">
-                <div class="card-body ">
-                    <div class="text-left">
-
-                        <table id="datatable" class="table table-bordered nowrap" style="  width: 100%;">
-                            <thead>
-                                <tr>
-
-                                    <th></th>
-                                    <th>CaseID</th>
-                                    <th>DateOC</th>
-                                    <th>Case Type</th>
-                                    <th>Case Description</th>
-                                    <!-- <th>FO Remarks</th>
-                                    <th>FO Amount</th> -->
-                                    <th>Name</th>
-                                    <th>Fathersname</th>
-                                    <th>Cnic</th>
-                                    <th>Contact</th>
-                                    <th>Email</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div> <!-- end col -->
-
-
-
-            <div class="modal fade edit-modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title mt-0" id="myLargeModalLabel">Assign Case</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        </div>
-                        <div class="modal-body cust-modal-body"> 
-
-                            <!-- Field Officer Fields -->
-                            <div class="row">
-                                <div class="col-md-12"> 
-                                    <div class="card-body">
-                                        <?php
-                                        include 'TabPanel/Tab_Buttons.php';
-                                        ?>
-                                    </div><!--end card-body-->
-
-                                    <div class="tab-content">
-                                        <?php
-                                        include('TabPanel/Tab1.php');
-                                        include('TabPanel/Tab2.php'); 
-                                        include('TabPanel/Tab3.php'); 
-                                        include('TabPanel/Tab4.php');
-                                        include('TabPanel/Tab5.php');
-                                        include('TabPanel/Tab6.php');
-                                        include('TabPanel/Tab7.php');
-                                        include('TabPanel/Tab8.php');
-                                        include('TabPanel/Tab9.php');
-
-
-                                        ?>
-                                    </div>
-                                </div><!--end tab-content-->
+        <?php include "leftbar.php"; ?>
+        <!-- Left Sidenav -->
+        <!-- Page Content-->
+        <div class="page-content">
+            <div class="container-fluid">
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            <div class="float-right">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Home</a></li>
+                                    <li class="breadcrumb-item active">Home</li>
+                                </ol>
                             </div>
+                            <h4 class="page-title">Welcome <?php echo $_SESSION['role']; ?> </h4>
+                        </div><!--end page-title-box-->
+                    </div><!--end col-->
+                </div>
+
+                <!-- end page title end breadcrumb -->
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="text-left">
+
+                                <table id="datatable" class="table table-bordered nowrap" style="width: 100%;">
+                                    <thead>
+                                        <tr>
+
+                                            <th></th>
+                                            <th>CaseID</th>
+                                            <th>DateOC</th>
+                                            <th>Case Type</th>
+                                            <th>Case Description</th>
+                                        
+                                            <th>Name</th>
+                                            <th>Fathersname</th>
+                                            <th>Cnic</th>
+                                            <th>Contact</th>
+                                            <th>Email</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div> <!-- end col -->
 
 
 
-                      <!--     <div class="col-lg-12">
+                    <div class="modal fade edit-modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title mt-0" id="myLargeModalLabel">Assign Case</h5>
+                                    <button type="button" class="close" data-dismiss="modal"
+                                        aria-hidden="true">×</button>
+                                </div>
+                                <div class="modal-body cust-modal-body">
+
+                                    <!-- Field Officer Fields -->
+                                    <div class="row">
+                                        <div class="col-xs-2 col-sm-2 col-md-12">
+                                            <div class="card-body">
+                                                <?php
+                                                include 'TabPanel/Tab_Buttons.php';
+                                                ?>
+                                            </div><!--end card-body-->
+
+                                            <div class="tab-content">
+                                                <?php
+                                                include('TabPanel/Tab1.php');
+                                                include('TabPanel/Tab2.php');
+                                                include('TabPanel/Tab3.php');
+                                                include('TabPanel/Tab4.php');
+                                                include('TabPanel/Tab5.php');
+                                                include('TabPanel/Tab6.php');
+                                                include('TabPanel/Tab7.php');
+                                                include('TabPanel/Tab8.php');
+                                                include('TabPanel/Tab9.php');
+
+
+                                                ?>
+                                            </div>
+                                        </div><!--end tab-content-->
+                                    </div>
+
+
+
+                                    <!--     <div class="col-lg-12">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <label for="example-text-input" class="col-lg-12 col-form-label  C-Modal-Data-title text-center">Assign Case</label>
@@ -252,39 +255,40 @@ $_SESSION['role'] = 'Test Role';
                                </div>
                            </div>
                        </div>-->
-                   </div> 
-               </div><!-- /.modal-content -->
-           </div><!-- /.modal-dialog -->
-       </div>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div>
 
 
 
 
 
 
-   </div><!-- container -->
-   <?php include("footer.php");?>
-</div>
-<!-- end page content -->
-</div>
-<!-- end page-wrapper -->
-<!-- jQuery  -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/metisMenu.min.js"></script>
-<script src="assets/js/waves.min.js"></script>
-<script src="assets/js/jquery.slimscroll.min.js"></script>
-<!--Plugins-->
-<script src="assets/plugins/moment/moment.js"></script>
-<!-- Required datatable js -->
-<script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
-<script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
-<script src="assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
-<script src="assets/plugins/sweet-alert2/sweetalert2.min.js"></script>
-<script src="assets/pages/jquery.sweet-alert.init.js"></script>
-<script src="functions/Panel.js"></script>
-<!-- App js -->
-<script src="assets/js/app.js"></script>
+                </div><!-- container -->
+                <?php include("../footer.php"); ?>
+            </div>
+            <!-- end page content -->
+        </div>
+        <!-- end page-wrapper -->
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+        <!--Plugins-->
+        <script src="assets/plugins/moment/moment.js"></script>
+        <!-- Required datatable js -->
+        <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
+        <script src="assets/plugins/sweet-alert2/sweetalert2.min.js"></script>
+        <script src="assets/pages/jquery.sweet-alert.init.js"></script>
+        <script src="functions/Panel.js"></script>
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
 </body>
+
 </html>

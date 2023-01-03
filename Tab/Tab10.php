@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">                                            
-            <div class="card" style="padding: 2rem;" >
+            <div class="card cust-card" style="padding: 2rem;" >
                 <div class="card-body" style="height: 41rem !important;">
                              <div class="row">
                        <label for="example-text-input" class="col-lg-10 col-form-label  C-Modal-Data-title text-center">Business Tabs</label>

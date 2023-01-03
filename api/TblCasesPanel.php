@@ -9,7 +9,7 @@ if($connect)
 {
 
 
-    $query = mysqli_query($connect,"select   `caseid`, `noofmales`, `nooffemales`, `noofdependents`, `noofpersonearning`, `familyincome`, `monthlyration`, `monthlyhealthcare`, `monthlyeducation`, `otherexpenses`, `totalexpenses`, `monthlysirplusdeficit`, `cashbank`, `goldsilver`, `provisionalfund`, `paidcommittee`, `securitydeposit`, `loangiven`, `othercurrency`, `tradeassets`, `unnecessaryflats`, `extramobilephones`, `extravehicles`, `extralivestocks`, `totalcountableassets`, `rentpayable`, `securitydepositpayable`, `payableamountcommittee`, `utilitybillspayable`, `loanpayable`, `ttldductliabilities`, `totaldeductableliabiliities`, `netcoutableassets`, `currentzakatevaluation`, `muslim`, `syed`, `agakani`, `zakatevaluation`, `amountapplied`, `foamount`, `foremarks2`, `executiverelationship`, `referencename`, `refferedby`, `intension`, `experience`, `capability`, `training`, `otherremarks`, `doc`, `casetype`, `casedescription`, `name`, `fathersname`, `cnic`, `contact`, `email`, `status`, `panelremarks`, `panelamount`, `netsalary`, `address`, `formid`, `foremarks`, `nob`, `nobdesc`, `city`, `otp`,`FOAmount`,`FORemarks2`  from `tblmainform` where `status` = 'Panel'  ");
+    $query = mysqli_query($connect,"select   `caseid`, `employment`,  `noofmales`, `nooffemales`, `noofdependents`, `noofpersonearning`, `familyincome`, `monthlyration`, `monthlyhealthcare`, `monthlyeducation`, `otherexpenses`, `totalexpenses`, `monthlysirplusdeficit`, `cashbank`, `goldsilver`, `provisionalfund`, `paidcommittee`, `securitydeposit`, `loangiven`, `othercurrency`, `tradeassets`, `unnecessaryflats`, `extramobilephones`, `extravehicles`, `extralivestocks`, `totalcountableassets`, `rentpayable`, `securitydepositpayable`, `payableamountcommittee`, `utilitybillspayable`, `loanpayable`, `ttldductliabilities`, `totaldeductableliabiliities`, `netcoutableassets`, `currentzakatevaluation`, `muslim`, `syed`, `agakani`, `zakatevaluation`, `amountapplied`, `foamount`, `foremarks2`, `executiverelationship`, `referencename`, `refferedby`, `intension`, `experience`, `capability`, `training`, `otherremarks`, `doc`, `casetype`, `casedescription`, `name`, `fathersname`, `cnic`, `contact`, `email`, `status`, `panelremarks`, `panelamount`, `netsalary`, `address`, `formid`, `foremarks`, `nob`, `nobdesc`, `city`, `otp`,`FOAmount`,`FORemarks2`  from `tblmainform` where `status` = 'Panel'  ");
 
     if (!$query
   )  {
@@ -37,6 +37,7 @@ if($connect)
       data-casedesc="'.$row["casedescription"].'"
       data-name="'.$row["name"].'"
       data-fathersname="'.$row["fathersname"].'"
+      data-employment="'.$row["employment"].'"
       data-cnic="'.$row["cnic"].'"
       data-contact="'.$row["contact"].'"
       data-email="'.$row["email"].'"

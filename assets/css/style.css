@@ -9056,22 +9056,25 @@ color: red;
 }
 
 
- .cust-card-left-button{
+ /* .cust-card-left-button{
 padding:0rem 1rem 0rem 6rem;
   }
    .cust-card-right-button
 {
     padding:0rem 6rem 0rem 1rem;
-  }
+  } */
 
 
 @media (max-width: 768px) {
   .cust-modal-body{
     height: 114rem !important;
+  
   }
+
 
   .cust-card{
       height: 103rem !important;
+      
   }
   .cust-card-left-button{
 padding:0.5rem;
@@ -9082,9 +9085,10 @@ padding:0.5rem;
   }
 
 .cust-btn-primary{
-    max-height: 4rem;
-    height: 4rem;
+    max-height: 5rem;
+    height: 5rem;
 }
 
     
 }
+

@@ -9,7 +9,7 @@ if($connect)
 {
 
 
-    $query = mysqli_query($connect,"select   `caseid`, `noofmales`, `nooffemales`, `noofdependents`, `noofpersonearning`, `familyincome`, `monthlyration`, `monthlyhealthcare`, `monthlyeducation`, `otherexpenses`, `totalexpenses`, `monthlysirplusdeficit`, `cashbank`, `goldsilver`, `provisionalfund`, `paidcommittee`, `securitydeposit`, `loangiven`, `othercurrency`, `tradeassets`, `unnecessaryflats`, `extramobilephones`, `extravehicles`, `extralivestocks`, `totalcountableassets`, `rentpayable`, `securitydepositpayable`, `payableamountcommittee`, `utilitybillspayable`, `loanpayable`, `ttldductliabilities`, `totaldeductableliabiliities`, `netcoutableassets`, `currentzakatevaluation`, `muslim`, `syed`, `agakani`, `zakatevaluation`, `amountapplied`, `foamount`, `foremarks2`, `executiverelationship`, `referencename`, `refferedby`, `intension`, `experience`, `capability`, `training`, `otherremarks`, `doc`, `casetype`, `casedescription`, `name`, `fathersname`, `cnic`, `contact`, `email`, `status`, `panelremarks`, `panelamount`, `netsalary`, `address`, `formid`, `foremarks`, `nob`, `nobdesc`, `city`, `otp`  from `tblmainform` where `status` in ('New','Re-assigned','Reimbursed')  ");
+    $query = mysqli_query($connect,"select   `caseid`, `employement`, `noofmales`, `nooffemales`, `noofdependents`, `noofpersonearning`, `familyincome`, `monthlyration`, `monthlyhealthcare`, `monthlyeducation`, `otherexpenses`, `totalexpenses`, `monthlysirplusdeficit`, `cashbank`, `goldsilver`, `provisionalfund`, `paidcommittee`, `securitydeposit`, `loangiven`, `othercurrency`, `tradeassets`, `unnecessaryflats`, `extramobilephones`, `extravehicles`, `extralivestocks`, `totalcountableassets`, `rentpayable`, `securitydepositpayable`, `payableamountcommittee`, `utilitybillspayable`, `loanpayable`, `ttldductliabilities`, `totaldeductableliabiliities`, `netcoutableassets`, `currentzakatevaluation`, `muslim`, `syed`, `agakani`, `zakatevaluation`, `amountapplied`, `foamount`, `foremarks2`, `executiverelationship`, `referencename`, `refferedby`, `intension`, `experience`, `capability`, `training`, `otherremarks`, `doc`, `casetype`, `casedescription`, `name`, `fathersname`, `cnic`, `contact`, `email`, `status`, `panelremarks`, `panelamount`, `netsalary`, `address`, `formid`, `foremarks`, `nob`, `nobdesc`, `city`, `otp`  from `tblmainform` where `status` in ('New','Re-assigned','Reimbursed')  ");
 
     if (!$query
   )  {
@@ -32,11 +32,13 @@ if($connect)
       $Action='<td>
       <a  
       id="'.$row["caseid"].'" 
-        data-caseid="'.$row["caseid"].'"
-         data-casetype="'.$row["casetype"].'"
+      data-caseid="'.$row["caseid"].'"
+      data-employment="'.$row["employment"].'"
+      data-casetype="'.$row["casetype"].'"
       data-casedesc="'.$row["casedescription"].'"
       data-name="'.$row["name"].'"
-      data-fathersname="'.$row["fathersname"].'"
+      data-fathersname="'.$row["fathersname"].'
+      
       data-cnic="'.$row["cnic"].'"
       data-contact="'.$row["contact"].'"
       data-email="'.$row["email"].'"
@@ -140,6 +142,7 @@ if($row["status"]=='Reimbursed'){
           "caseDescription" => $row["casedescription"],
           "Name" => $row["name"],
           "Fathersname" => $row["fathersname"],
+      
           "cnic" => $row["cnic"],
           "contact" => $row["contact"],
           "email" => $row["email"],

@@ -27,6 +27,10 @@ function onloadss(){
     if($('#fathersnamec').is(':checked') == true){fathersnamec = 'Yes';}
     else {fathersnamec = 'No';}
 
+    var employmentc = '';
+    if($('#employmentc').is(':checked') == true){employmentc = 'Yes';}
+    else {employmentc = 'No';}
+
     var contactc = '';
     if($('#contactc').is(':checked') == true){contactc = 'Yes';}
     else {contactc = 'No';}
@@ -272,6 +276,7 @@ function onloadss(){
            emailc:emailc,
                   fullnamec:fullnamec,
                   fathersnamec:fathersnamec,
+                  employmentc:employmentc,
                   contactc:contactc,
                   cityc:cityc,
                   NetSalaryc:NetSalaryc,
@@ -754,6 +759,7 @@ $(document).ready(function () {
         $("#email").val($(this).data("email"));
         $("#fullname").val($(this).data("name"));
         $("#fathersname").val($(this).data("fathersname"));
+        $("#employment").val($(this).data("employment"));
         $("#contact").val($(this).data("contact"));
         $("#cnic").val($(this).data("cnic"));
         $("#casetype").val($(this).data("casetype")); 
@@ -888,6 +894,7 @@ function btnsubmit() {
     var status1 = $("#status1").val();
     var name1 = $("#name1").val();
     var fathername1 = $("#fathername1").val();
+    var employment = $("#employment").val();
     var cnic1 = $("#cnic1").val();
     var contact1 = $("#contact1").val();
     var email1 = $("#email1").val();
@@ -1096,7 +1103,8 @@ function btnsubmit() {
     $("#53v").css("display", "");
     $("#OtherRemarks").css("border-color", "");
     $("#54v").css("display", "");
-
+    $("#employment").css("border-color", "");
+    $("#66v").css("display", "");
     // ExecutiveRelationship
     // ReferenceName
     // RefferedBy
@@ -1454,6 +1462,12 @@ function btnsubmit() {
         $("#OtherRemarks").css("border-color", "red");
         $("#OtherRemarks").focus();
     }
+    else if (employment == "") {
+        $("#66v").css("display", "block");
+        $("#66v").text("Please Enter Valid Remarks .");
+        $("#employment").css("border-color", "red");
+        $("#employment").focus();
+    }
 
     else {
     }
@@ -1528,8 +1542,8 @@ function btnsubmit() {
                     Experience: Experience,
                     Capability: Capability,
                     Training: Training,
-                    OtherRemarks: OtherRemarks
-
+                    OtherRemarks: OtherRemarks,
+                    employment: employment
 
                 },
                 dataType: "JSON",
