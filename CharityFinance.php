@@ -42,16 +42,7 @@
                         <?php
                            include 'Tab/Tab_Buttons.php';
                            ?>
-                 <!--    <div class="row">
-
-
-                        <div class="col-md-1" style="padding: 0.3rem;"></div>
-                        <div class="col-md-12">
-                            <div class="card-body">
-                            
-                            </div> 
-                        </div>
-                    </div> -->
+        
                     <div class="tab-content">
                         <?php
                  include('Tab/Tab1.php');
