@@ -11,7 +11,7 @@ function onloadss(){
 
     var caseid = $("#id1").val();
     var AmountApplied2 = $("#AmountApplied2").val();
-      var FOAmount = $("#FOAmount2").val();
+    var FOAmount = $("#FOAmount2").val();
     var FORemarks2 = $("#FORemarks22").val();
   
 
@@ -1489,7 +1489,7 @@ function btnsubmit() {
                 data: {
 
                     id1: id1,
-
+                    employment: employment,
                     NoofMales: NoofMales,
                     NoofFemales: NoofFemales,
                     NoofDependents: NoofDependents,
@@ -1542,8 +1542,8 @@ function btnsubmit() {
                     Experience: Experience,
                     Capability: Capability,
                     Training: Training,
-                    OtherRemarks: OtherRemarks,
-                    employment: employment
+                    OtherRemarks: OtherRemarks
+                    
 
                 },
                 dataType: "JSON",

@@ -74,7 +74,7 @@ if (
 // $cnic1 = htmlentities($_POST["cnic1"]; 
 // $contact1 = htmlentities($_POST["contact1"]; 
 // $email1 = htmlentities($_POST["email1"]; 
-	$employee= htmlentities($_POST["employee"]);
+	$employment= htmlentities($_POST["employment"]);
 	$NoofMales = htmlentities($_POST["NoofMales"]);
 	$NoofFemales = htmlentities($_POST["NoofFemales"]);
 	$NoofDependents = htmlentities($_POST["NoofDependents"]);
@@ -169,7 +169,7 @@ if (
 			$stmt->bind_param(
 				'siiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiissssiisssssssssssssssssssss',
 				// $id1,
-				$employee,
+				$employment,
 				$NoofMales,
 				$NoofFemales,
 				$NoofDependents,

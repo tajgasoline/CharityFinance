@@ -24,7 +24,7 @@
                                             <div class="col-sm-8 ">
                                                 <div class="custom-checkbox">
                                                     <input type="checkbox" class="form-check-input" value="yes"
-                                                        id="employeec">
+                                                        id="employmentc">
                                                 </div>
                                                 <select class="select2 form-control mb-3 custom-select "
                                                     style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true"

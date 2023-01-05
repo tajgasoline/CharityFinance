@@ -113,7 +113,7 @@ $(document).ready(function () {
         $("#Training").val($(this).data("training"));
         $("#OtherRemarks").val($(this).data("otherremarks")); 
 
-         $("#AmountApplied2").val($(this).data("amountapplied")); 
+        $("#AmountApplied2").val($(this).data("amountapplied")); 
         $("#FOAmount2").val($(this).data("foamount"));
         $("#FORemarks22").val($(this).data("foremarks2")); 
 
