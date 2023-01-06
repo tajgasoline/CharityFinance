@@ -116,7 +116,7 @@ $(document).ready(function () {
         $("#AmountApplied2").val($(this).data("amountapplied")); 
        
         $("#FOAmount2").val($(this).data("foamount"));
-        $("#FORemarks22").val($(this).data("foremarks2")); 
+        $("#FORemarks2").val($(this).data("foremarks2")); 
 
 
         if ($(this).data("casetype") == 'Business') {

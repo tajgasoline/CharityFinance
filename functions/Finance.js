@@ -47,7 +47,7 @@ $(document).ready(function () {
         $("#status1").val($(this).data("status"));
         $("#PRemarks").val($(this).data("panelremarks"));
         $("#PAmount").val($(this).data("panelamount"));
-        $("#FOremarks1").val($(this).data("foremarks"));
+        $("#FORemarks2").val($(this).data("foremarks2"));
         $("#FOAmount1").val($(this).data("foamount"));
 
 

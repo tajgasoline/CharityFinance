@@ -8,7 +8,7 @@ $message="";
 if($connect)
 {
 
-    $query = mysqli_query($connect,"SELECT `CaseID`, `DOC`, `casetype`, `caseDescription`, `Name`, `Fathersname`, `cnic`, `contact`, `email`, `status`, `panelremarks`, `panelamount`, `foremarks`, `foamount` FROM `tblmainform` where `status` = 'Approved'");
+    $query = mysqli_query($connect,"SELECT `CaseID`, `DOC`, `casetype`, `caseDescription`, `Name`, `Fathersname`, `cnic`, `contact`, `email`, `status`, `panelremarks`, `panelamount`, `foremarks2`, `foamount` FROM `tblmainform` where `status` = 'Approved'");
 
     if (!$query
   )  {
@@ -41,7 +41,7 @@ if($connect)
       data-status="'.$row["status"].'"   
       data-panelremarks="'.$row["panelremarks"].'"
       data-panelamount="'.$row["panelamount"].'"   
-      data-foremarks="'.$row["foremarks"].'"
+      data-foremarks2="'.$row["foremarks2"].'"
       data-foamount="'.$row["foamount"].'"   
 
       class="mr-2 edit-modal" data-toggle="modal" data-animation="bounce" data-target=".edit-modal1" ><i class="fas fa-edit text-info font-16"></i></a></br></td>';

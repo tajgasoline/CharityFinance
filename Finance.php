@@ -193,7 +193,7 @@ $_SESSION['role'] = 'Test Role';
                                     <div class="form-group row">
                                         <label for="example-text-input" class="col-sm-2 col-form-label text-right">Field Officer Remarks</label>
                                         <div class="col-sm-10">
-                                            <textarea class="form-control" type="text" placeholder="Please Enter Remarks"   id="FOremarks1" disabled></textarea><span class="help-block custom-block-hide" id="10v1"><<small ></small></span>
+                                            <textarea class="form-control" type="text" placeholder="Please Enter Remarks"   id="FORemarks2" disabled></textarea><span class="help-block custom-block-hide" id="10v1"><<small ></small></span>
                                         </div>
                                     </div> 
                                     <div class="form-group row">
