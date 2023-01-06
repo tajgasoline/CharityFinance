@@ -19,6 +19,17 @@
         </select>
     
     </div> -->
+           <div class="form-group row">
+                    <label for="employee" class="col-sm-4 col-form-label text-align-left">Employee/UnEmployee</label>
+                    <div class="col-sm-8 "> 
+                        <select class="select2 form-control mb-3 custom-select " style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true" id="employment" >
+                            <option value="null" selected disabled>Select Here</option>
+                            <option value="Employee">Employee</option>
+                            <option value="UnEmployee">UnEmployee</option>
+                        </select>
+                        <span class="help-block custom-block-hide" id="66v"><small ></small></span>
+                    </div>
+                </div><!--end form-group--> 
                                  <div class="form-group row">
                                     <label for="email" class="col-sm-4 col-form-label text-align-left">Email</label>
                                     <div class="col-sm-8 ">
@@ -46,17 +57,7 @@
                             <span class="help-block custom-block-hide" id="57v"><small ></small></span>
                         </div>
                     </div><!--end form-group--> 
-                    <div class="form-group row">
-                    <label for="employee" class="col-sm-4 col-form-label text-align-left">Employee/UnEmployee</label>
-                    <div class="col-sm-8 "> 
-                        <select class="select2 form-control mb-3 custom-select " style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true" id="employment" >
-                            <option value="null" selected disabled>Select Here</option>
-                            <option value="Employee">Employee</option>
-                            <option value="UnEmployee">UnEmployee</option>
-                        </select>
-                        <span class="help-block custom-block-hide" id="66v"><small ></small></span>
-                    </div>
-                </div><!--end form-group--> 
+             
                     <div class="form-group row">
                         <label for="contact" class="col-sm-4 col-form-label text-align-left">Contact</label>
                         <div class="col-sm-8 ">

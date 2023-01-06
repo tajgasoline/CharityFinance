@@ -35,7 +35,8 @@
     // include('navbar.php'); 
     ?>
     <!-- Log In page -->
-    <div class="row vh-1080 " style="background-image: url('assets/images/webbg.jpg');">
+    <!-- style="background-image: url('assets/images/webbg.jpg');" -->
+    <div class="row vh-1080 " >
         <div class="col-md-12" style="margin-top:1rem ;">
             <div class="row">
                 <div class="col-md-12">

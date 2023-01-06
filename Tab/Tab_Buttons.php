@@ -28,7 +28,7 @@
         <!-- </div> -->
     <!-- </div> --> 
 
-    <div class="row login-logo">
+    <div class="row login-logo" style="margin-left: 9rem;">
         <table class="table table-responsive" style="width:100%; text-align: center;" >
             <tr>
                 <td>
