@@ -236,7 +236,7 @@ if (
 			if ($stmt == true) {
 				$result = "Inserted";
 
-				$plot_approving = "UPDATE `tblmainform` SET  `AmountApplied`='" . $AmountApplied2 . "' ,  `status`='Panel' WHERE `CaseID`=" . $caseid . "";
+				$plot_approving = "UPDATE `tblmainform` SET  `AmountApplied`='" . $AmountApplied2 . "' , `FOAmount`='" . $FOAmount . "' , `FORemarks2`='" . $FORemarks2 . "' ,  `status`='Panel' WHERE `CaseID`=" . $caseid . "";
 				$run_querry = mysqli_query($connect, $plot_approving);
 				mysqli_close($connect);
 
