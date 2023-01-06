@@ -752,7 +752,7 @@ function btnsubmit2() {
     var natureofbusiness = $("#natureofbusiness").val();
     var otherbusiness = $("#otherbusiness").val();
     var city = $("#city").val();
-    var employee = $('#employee').val();
+    var employment = $('#employment').val();
 
 
 
@@ -932,7 +932,7 @@ function btnsubmit2() {
     $("#64v").css("display", "");
     $("#city").css("border-color", "");
     $("#59v").css("display", "");
-    $("#employee").css("border-color", "");
+    $("#employment").css("border-color", "");
     $("#66v").css("display", "");
 
     // ExecutiveRelationship
@@ -1367,11 +1367,11 @@ function btnsubmit2() {
         $("#casedesc").css("border-color", "red");
         $("#casedesc").focus();
     }
-    else if (employee == "") {
+    else if (employment == "") {
         $("#66v").css("display", "block");
         $("#66v").text("Invalid Employement");
-        $("#employee").css("border-color", "red");
-        $("#employee").focus();
+        $("#employment").css("border-color", "red");
+        $("#employment").focus();
     }
    {
     }
@@ -1459,7 +1459,7 @@ function btnsubmit2() {
                     natureofbusiness: natureofbusiness,
                     otherbusiness: otherbusiness,
                     city: city,
-                    employee: employee
+                    employment: employment
 
 
                 },

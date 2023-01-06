@@ -10,6 +10,7 @@ if (
 	// isset($_POST["cnic1"]) && 
 	// isset($_POST["contact1"]) && 
 	// isset($_POST["email1"]) &&  
+	isset($_POST["employment"]) &&
 	isset($_POST["NoofMales"]) &&
 	isset($_POST["NoofFemales"]) &&
 	isset($_POST["NoofDependents"]) &&
@@ -114,8 +115,8 @@ if (
 	$AgaKani = htmlentities($_POST["AgaKani"]);
 	$ZakatEvaluation = htmlentities($_POST["ZakatEvaluation"]);
 	$AmountApplied = htmlentities($_POST["AmountApplied"]);
-	$FOAmount = htmlentities($_POST["FOAmount"]);
-	$FORemarks2 = htmlentities($_POST["FORemarks2"]);
+	// $FOAmount = htmlentities($_POST["FOAmount"]);
+	// $FORemarks2 = htmlentities($_POST["FORemarks2"]);
 	$ExecutiveRelationship = htmlentities($_POST["ExecutiveRelationship"]);
 	$ReferenceName = htmlentities($_POST["ReferenceName"]);
 	$RefferedBy = htmlentities($_POST["RefferedBy"]);
@@ -165,7 +166,7 @@ if (
 				`LoanPayable`, `TtlDductLiabilities`, `TotalDeductableLiabiliities`,
 				`NetCoutableAssets`, `CurrentZakatEvaluation`,`Muslim`,
 				`Syed`, `AgaKani`, `ZakatEvaluation`,`AmountApplied`,
-				`FOAmount`, `FORemarks2`,`ExecutiveRelationship`, `ReferenceName`, `RefferedBy`, `Intension`, `Experience`, `Capability`, `Training`, `OtherRemarks`,`DOC`, `casetype`, `caseDescription`, `Name`, `Fathersname`, `cnic`, `contact`, `email`, `status`, `address`, `netsalary`, `NOB`, `NOBdesc`, `city`) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,Now(),?,?,?,?,?,?,?,'New',?,?,?,?,?)");
+				`ExecutiveRelationship`, `ReferenceName`, `RefferedBy`, `Intension`, `Experience`, `Capability`, `Training`, `OtherRemarks`,`DOC`, `casetype`, `caseDescription`, `Name`, `Fathersname`, `cnic`, `contact`, `email`, `status`, `address`, `netsalary`, `NOB`, `NOBdesc`, `city`) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,Now(),?,?,?,?,?,?,?,'New',?,?,?,?,?)");
 			$stmt->bind_param(
 				'siiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiissssiisssssssssssssssssssss',
 				// $id1,
@@ -209,8 +210,8 @@ if (
 				$ZakatEvaluation
 				,
 				$AmountApplied,
-				$FOAmount,
-				$FORemarks2,
+				// $FOAmount,
+				// $FORemarks2,
 				$ExecutiveRelationship,
 				$ReferenceName,
 				$RefferedBy,
@@ -236,15 +237,16 @@ if (
 			$stmt->execute();
 			if ($stmt == true) {
 					$result = "Inserted";
-				// $last_id = $connect->insert_id;
-				// $plot_approving = "UPDATE `tblmainform` SET  `FORemarks`='" . $FORemarks2 . "',`FOamount`='" . $FOAmount . "',`status`='Panel',`formid`='" . $last_id . "' WHERE `CaseID`=" . $id1 . "";
-				// $run_querry = mysqli_query($connect, $plot_approving);
-				// mysqli_close($connect);
-				// if ($run_querry == "True") {
-				// 	$result = "Inserted";
-				// } else {
-				// 	$result = "error";
-				// }
+				$last_id = $connect->insert_id;
+		
+				$plot_approving = "UPDATE `tblmainform` SET  `FOamount`='" . $FOAmount . "',`FORemarks`='" . $FORemarks2 . "',`status`='Panel',`formid`='" . $last_id . "' WHERE `CaseID`=" . $id1 . "";
+				$run_querry = mysqli_query($connect, $plot_approving);
+				mysqli_close($connect);
+				if ($run_querry == "True") {
+					$result = "Inserted";
+				} else {
+					$result = "error";
+				}
 			} else {
 				$result = "Not Inserted";
 			}

@@ -26,7 +26,7 @@
                                             <label for="officeramount" class="col-sm-4 col-form-label text-align-left">Field Officer Suggested Amount</label>
                                             <div class="col-sm-8 ">
                                              <div class="input-group mb-3">
-                                             <input type="text" class="form-control numbersOnly" id="FOAmount" placeholder="Enter Amount">
+                                             <input type="text" class="form-control numbersOnly" id="FOAmount2" placeholder="Enter Amount">
                                             </div> 
                                             <span class="help-block custom-block-hide" id="45v"><small ></small></span>
                                         </div>
@@ -36,7 +36,7 @@
                         <label for="email" class="col-sm-4 col-form-label text-align-left">Field Officer Remarks</label>
                         <div class="col-sm-8 ">
                            <div class="input-group mb-3">
-                            <textarea type="text" class="form-control" id="FORemarks2"  placeholder="Enter Field Officer Remarks"></textarea>
+                            <textarea type="text" class="form-control" id="FORemarks22"  placeholder="Enter Field Officer Remarks"></textarea>
                         </div>  <span class="help-block custom-block-hide" id="100v">
                     </div><span class="help-block custom-block-hide" id="46v">
                 </div><!--end form-group--> 

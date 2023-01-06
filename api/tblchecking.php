@@ -270,7 +270,7 @@ if (
 			$stmt->execute();
 			if ($stmt == true) {
 				$last_id = $connect->insert_id;
-				$plot_approving = "UPDATE `checking` SET  `FORemarks`='" . $FORemarks2 . "',`FOamount`='" . $FOAmount . "',`status`='Panel',`formid`='" . $last_id . "' WHERE `CaseID`=" . $id1 . "";
+				$plot_approving = "UPDATE `checking` SET  `FORemarks`='" . $FORemarks2 . "',`FOAmount`='" . $FOAmount . "',`status`='Panel',`formid`='" . $last_id . "' WHERE `CaseID`=" . $id1 . "";
 				$run_querry = mysqli_query($connect, $plot_approving);
 				mysqli_close($connect);
 				if ($run_querry == "True") {
