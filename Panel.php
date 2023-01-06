@@ -266,7 +266,7 @@ $_SESSION['role'] = 'Test Role';
 
 
                 </div><!-- container -->
-                <?php include("../footer.php"); ?>
+                <?php include("footer.php"); ?>
             </div>
             <!-- end page content -->
         </div>

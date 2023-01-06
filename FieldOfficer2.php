@@ -28,7 +28,7 @@ session_start();
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <!-- <script src="assets/ajax.js"></script> -->
 </head>
 
@@ -55,13 +55,12 @@ session_start();
                         </div><!--end page-title-box-->
                     </div><!--end col-->
                 </div>
-                <!-- end page title end breadcrumb -->
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                         <div class="text-left">
+                            <div class="text-left table-responsive">
 
-                                <table id="datatable" class="table table-bordered  nowrap" style="width: 100%;">
+                                <table id="datatable" class="table table-bordered nowrap" style="width: 100%;">
                                     <thead>
                                         <tr>
                                             <th></th>
@@ -140,7 +139,7 @@ session_start();
                                     <button type="button" class="close" data-dismiss="modal" id="btncanel2"
                                         aria-hidden="true">×</button>
                                 </div>
-                                <div class="modal-body ">
+                                <div class="modal-body cust-modal-body">
                                     <div class="col-lg-12">
                                         <div class="form-group row">
                                             <label for="example-text-input"
@@ -175,36 +174,39 @@ session_start();
 
 
                                     </div>
-                                </div>
-                            </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div>
 
 
-                </div><!-- container -->
-                <?php include("../footer.php"); ?>
+
+
+
+
+                    </div><!-- container -->
+                    <?php include("footer.php"); ?>
+                </div>
+                <!-- end page content -->
             </div>
-            <!-- end page content -->
-        </div>
-        <!-- end page-wrapper -->
-        <!-- jQuery  -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/metisMenu.min.js"></script>
-        <script src="assets/js/waves.min.js"></script>
-        <script src="assets/js/jquery.slimscroll.min.js"></script>
-        <!--Plugins-->
-        <script src="assets/plugins/moment/moment.js"></script>
-        <!-- Required datatable js -->
-        <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
-        <script src="assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
-        <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
-        <script src="assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
-        <script src="assets/plugins/sweet-alert2/sweetalert2.min.js"></script>
-        <script src="assets/pages/jquery.sweet-alert.init.js"></script>
-        <script src="functions/FieldOfficer.js"></script>
-        <!-- App js -->
-        <script src="assets/js/app.js"></script>
+            <!-- end page-wrapper -->
+            <!-- jQuery  -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/js/metisMenu.min.js"></script>
+            <script src="assets/js/waves.min.js"></script>
+            <script src="assets/js/jquery.slimscroll.min.js"></script>
+            <!--Plugins-->
+            <script src="assets/plugins/moment/moment.js"></script>
+            <!-- Required datatable js -->
+            <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+            <script src="assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+            <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
+            <script src="assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
+            <script src="assets/plugins/sweet-alert2/sweetalert2.min.js"></script>
+            <script src="assets/pages/jquery.sweet-alert.init.js"></script>
+            <script src="functions/FieldOfficer.js"></script>
+            <!-- App js -->
+            <script src="assets/js/app.js"></script>
 </body>
 
 </html>

@@ -1,12 +1,12 @@
 <?php
-    // session_start();
-    // include('connect.php');
-    // error_reporting(1);
-    // if( !isset($_SESSION['userid']) ){
-    //     header("location: Login.php");
-    // }else{ 
-    //     $userid = $_SESSION['userid'];
-    // }
+// session_start();
+// include('connect.php');
+// error_reporting(1);
+// if( !isset($_SESSION['userid']) ){
+//     header("location: Login.php");
+// }else{ 
+//     $userid = $_SESSION['userid'];
+// }
 $_SESSION['role'] = 'Test Role';
 ?>
 <!DOCTYPE html>
@@ -48,18 +48,18 @@ $_SESSION['role'] = 'Test Role';
                                <li class="breadcrumb-item active">Home</li>
                            </ol>
                        </div>
-                       <h4 class="page-title">Welcome <?php echo $_SESSION['role'];?> </h4>
+                       <h4 class="page-title">Welcome <?php echo $_SESSION['role']; ?> </h4>
                    </div><!--end page-title-box-->
                </div><!--end col-->
            </div>
 
            <!-- end page title end breadcrumb -->
            <div class="col-lg-12" >
-            <div class="card">
+            <div class="card cust-card">
                 <div class="card-body">
                     <div class="text-left">
 
-                        <table id="datatable" class="table table-bordered dt-responsive nowrap" style=" overflow-x: auto;border-collapse: collapse; border-spacing: 0; width: 100%;">
+                        <table id="datatable" class="table table-bordered  nowrap" style=" width: 100%;">
                             <thead>
                                 <tr>
 
@@ -84,16 +84,17 @@ $_SESSION['role'] = 'Test Role';
             </div> <!-- end col -->
 
 
-
-            <div class="modal fade edit-modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title mt-0" id="myLargeModalLabel">Assign Case</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="col-lg-12">
+            <div class="modal fade edit-modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title mt-0" id="myLargeModalLabel">Assign Case</h5>
+                                    <button type="button" class="close" data-dismiss="modal"
+                                        aria-hidden="true">×</button>
+                                </div>
+                                <div class="modal-body cust-modal-body" >
+                          <div class="col-md-12">
                             <div class="row">
                                 <div class="col-md-6">
 
@@ -324,28 +325,30 @@ $_SESSION['role'] = 'Test Role';
 
 
 </div><!-- container -->
-<?php include("footer.php");?>
+<?php include("footer.php"); ?>
 </div>
 <!-- end page content -->
 </div>
 <!-- end page-wrapper -->
 <!-- jQuery  -->
 <script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/metisMenu.min.js"></script>
-<script src="assets/js/waves.min.js"></script>
-<script src="assets/js/jquery.slimscroll.min.js"></script>
-<!--Plugins-->
-<script src="assets/plugins/moment/moment.js"></script>
-<!-- Required datatable js -->
-<script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
-<script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
-<script src="assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
-<script src="assets/plugins/sweet-alert2/sweetalert2.min.js"></script>
-<script src="assets/pages/jquery.sweet-alert.init.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+        <!--Plugins-->
+        <script src="assets/plugins/moment/moment.js"></script>
+        <!-- Required datatable js -->
+        <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
+        <script src="assets/plugins/sweet-alert2/sweetalert2.min.js"></script>
+        <script src="assets/pages/jquery.sweet-alert.init.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
 <script src="functions/Finance.js"></script>
-<!-- App js -->
-<script src="assets/js/app.js"></script>
+
 </body>
 </html>
