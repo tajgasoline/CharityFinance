@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 06, 2023 at 06:43 AM
--- Server version: 10.4.20-MariaDB
--- PHP Version: 7.3.29
+-- Generation Time: Jan 16, 2023 at 11:31 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.0.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dbcharityfinance4`
+-- Database: `dbcharityfin6`
 --
 
 -- --------------------------------------------------------
@@ -110,7 +110,9 @@ INSERT INTO `checking` (`id`, `caseid`, `employment`, `NoofMales`, `NoofFemales`
 (4, '1', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', '', 'No', 'No', 'No', 'No', 'No', 'No', 'No', '', 0, '', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Validated', '', '', 'No', 'No', '', '', 'No', 'No', 'No', '2023-01-03 07:17:54'),
 (5, '1', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', '', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', '', 30000, 'Completed', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Yes', 'Validated', '', '', 'Yes', 'Yes', '', '', 'Yes', 'Yes', 'Yes', '2023-01-05 07:38:08'),
 (6, '2', 'Yes', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', '', 'No', 'No', 'No', 'No', 'No', 'No', 'No', '', 20000, 'DONE', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Yes', 'Yes', 'No', 'No', 'Yes', 'Validated', '', '', 'No', 'No', '', '', 'No', 'No', 'No', '2023-01-05 07:45:07'),
-(7, '1', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', '', 'No', 'No', 'No', 'No', 'No', 'No', 'No', '', 0, '', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Validated', '', '', 'No', 'No', '', '', 'No', 'No', 'No', '2023-01-05 12:12:23');
+(7, '1', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', '', 'No', 'No', 'No', 'No', 'No', 'No', 'No', '', 0, '', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Validated', '', '', 'No', 'No', '', '', 'No', 'No', 'No', '2023-01-05 12:12:23'),
+(8, '4', 'Yes', 'No', 'Yes', 'No', 'No', 'No', 'No', 'No', 'Yes', 'Yes', 'Yes', 'Yes', 'No', 'No', 'No', 'Yes', 'Yes', 'Yes', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'Yes', 'Yes', 'No', 'No', 'No', '', 'Yes', 'Yes', 'Yes', 'Yes', 'No', 'No', 'No', '', 50000, 'I checked this case', 'No', 'No', 'Yes', 'Yes', 'No', 'No', 'No', 'No', 'No', 'Yes', 'No', 'Yes', 'No', 'No', 'No', 'Validated', '', '', 'No', 'Yes', '', '', 'No', 'Yes', 'No', '2023-01-06 05:55:46'),
+(9, '2', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', '', 'No', 'No', 'No', 'No', 'No', 'No', 'No', '', 5000, 'testing', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'No', 'Validated', '', '', 'No', 'No', '', '', 'No', 'No', 'No', '2023-01-16 10:14:44');
 
 -- --------------------------------------------------------
 
@@ -185,7 +187,8 @@ INSERT INTO `tblfinance` (`id`, `ChequeNumber`, `ChequeAmount`, `ChequeRecName`,
 (11, '5555', '5', '555', '4220114810127', 1, 1, '2022-12-31 06:15:49', 'Bank Al Habib', 'Cheque', 0),
 (12, '', '', '', '', 1, 1, '2022-12-31 06:16:56', '', 'Cash', 6),
 (13, '', '', '', '', 1, 1, '2022-12-31 06:17:25', '', 'Cash', 6),
-(14, '4524554551', '20000', 'Rabeet Siddiqui', '4524528545285', 2, 1, '2023-01-05 07:48:12', 'Bank Al Habib', 'Cheque', 0);
+(14, '4524554551', '20000', 'Rabeet Siddiqui', '4524528545285', 2, 1, '2023-01-05 07:48:12', 'Bank Al Habib', 'Cheque', 0),
+(15, '', '', '', '', 4, 1, '2023-01-06 05:56:53', 'Bank Al Habib', 'Cash', 0);
 
 -- --------------------------------------------------------
 
@@ -271,7 +274,10 @@ CREATE TABLE `tblmainform` (
 
 INSERT INTO `tblmainform` (`caseid`, `employment`, `NoofMales`, `NoofFemales`, `NoofDependents`, `NoofPersonEarning`, `FamilyIncome`, `MonthlyRation`, `MonthlyHealthCare`, `MonthlyEducation`, `OtherExpenses`, `TotalExpenses`, `MonthlySirplusdeficit`, `CashBank`, `GoldSilver`, `ProvisionalFund`, `PaidCommittee`, `SecurityDeposit`, `LoanGiven`, `OtherCurrency`, `TradeAssets`, `UnnecessaryFlats`, `ExtraMobilePhones`, `ExtraVehicles`, `ExtraLivestocks`, `TotalCountableAssets`, `RentPayable`, `SecurityDepositPayable`, `PayableAmountCommittee`, `UtilityBillsPayable`, `LoanPayable`, `TtlDductLiabilities`, `TotalDeductableLiabiliities`, `NetCoutableAssets`, `CurrentZakatEvaluation`, `Muslim`, `Syed`, `AgaKani`, `ZakatEvaluation`, `AmountApplied`, `FOAmount`, `FORemarks2`, `ExecutiveRelationship`, `ReferenceName`, `RefferedBy`, `Intension`, `Experience`, `Capability`, `Training`, `OtherRemarks`, `DOC`, `casetype`, `caseDescription`, `Name`, `Fathersname`, `cnic`, `contact`, `email`, `status`, `panelremarks`, `panelamount`, `netsalary`, `address`, `formid`, `FOremarks`, `NOB`, `NOBdesc`, `city`, `otp`) VALUES
 (1, 'UnEmployee', 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 12, 1, 1, 1, 1, 1, 5, 5, 1, 1, 'Yes', 'No', 'No', 'Eligible', 0, 99, '55', 'Yes', 'Sir Rabeet', 'Sir Rabeet', 'Will', 'Intermediate', 'Expert', 'Training', 'I need training too', '2023-01-05 12:12:23', 'Charity', 'I want to start business', 'Salman Agha', 'Agha Asfandyar Khan', '4220114810127', '03347360763', 'aghasalmankhan95@gmail.com', 'Panel', 'Done', 20000, '500000', 'Karachi', 0, '55', 'Others', 'Digital Agency', 'Karachi', ''),
-(2, 'Employee', 1, 4, 4, 1, 300000, 10000, 5000, 10000, 45000, 70000, -230000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 'Yes', 'Yes', 'No', 'Not Eligib', 25000, 0, '', 'Yes', 'Salman Agha', 'Salman Agha', 'will', 'Expert', 'Beginner', 'Want to Train me', 'Good', '2023-01-05 12:25:07', 'Charity', 'I want to startup ', 'Rabeet Siddiqui', 'Rashid Siddiqui', '4585455545416', '03162278487', 'rabeet.siddiqui22@gmail.com', 'New', 'Done', 20000, '20000', 'H#222 Orangi Town Karachi', 0, '', 'Business1', '', 'Karachi', '');
+(2, 'Employee', 1, 4, 4, 1, 300000, 10000, 5000, 10000, 45000, 70000, -230000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 'Yes', 'Yes', 'No', 'Not Eligib', 5000, 5000, 'testing', 'Yes', 'Salman Agha', 'Salman Agha', 'will', 'Expert', 'Beginner', 'Want to Train me', 'Good', '2023-01-16 10:14:44', 'Charity', 'I want to startup ', 'Rabeet Siddiqui', 'Rashid Siddiqui', '4585455545416', '03162278487', 'rabeet.siddiqui22@gmail.com', 'Panel', 'Done', 20000, '20000', 'H#222 Orangi Town Karachi', 0, '', 'Business1', '', 'Karachi', ''),
+(3, '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 12, 1, 1, 1, 1, 1, 5, 5, 5, 5, 'Yes', 'No', 'No', 'Eligible', 0, 0, '', 'Yes', 'Rabeet', 'Rabeet', 'Will', 'Expert', 'Expert', 'Training', 'Other Remarks', '2023-01-06 05:53:26', 'Charity', 'This is case Desciprtion', 'Salman Agha', 'Agha Asfandyar Khan', '4220114810127', '03347360763', 'aghasalmankhan95@gmail.com', 'New', '', 0, '500000', 'Johar', 0, '', 'Others', 'Testing', 'Karachi', ''),
+(4, 'Employee', 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 12, 1, 1, 1, 1, 1, 5, 5, 5, 5, 'Yes', 'No', 'No', 'Eligible', 50000, 0, '', 'Yes', 'Rabeet', 'Rabeet', 'Will', 'Expert', 'Expert', 'Training', 'Other Remarks', '2023-01-06 05:56:53', 'Charity', 'This is case Desciprtion', 'Salman Agha', 'Agha Asfandyar Khan', '4220114810127', '03347360763', 'aghasalmankhan95@gmail.com', 'Reimbursed', 'This is panel remarks', 66, '500000', 'Johar', 0, '', 'Others', 'Testing', 'Karachi', ''),
+(5, '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 12, 1, 1, 1, 1, 1, 5, 5, 5, 5, 'Yes', 'No', 'No', 'Eligible', 0, 0, '', 'Yes', 'Rabeet', 'Rabeet', 'Will', 'Expert', 'Expert', 'Training', 'This is other veryfying remarks', '2023-01-06 05:59:25', 'Zakat', 'This is case desc', 'Saad', 'Agha', '4220114810127', '03347360763', 'syedmuhammadsaad@live.com', 'New', '', 0, '500000', 'Johar', 0, '', '', '', 'Karachi', '');
 
 -- --------------------------------------------------------
 
@@ -339,7 +345,7 @@ ALTER TABLE `tblstaff`
 -- AUTO_INCREMENT for table `checking`
 --
 ALTER TABLE `checking`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tblcase`
@@ -351,13 +357,13 @@ ALTER TABLE `tblcase`
 -- AUTO_INCREMENT for table `tblfinance`
 --
 ALTER TABLE `tblfinance`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `tblmainform`
 --
 ALTER TABLE `tblmainform`
-  MODIFY `caseid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `caseid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tblstaff`
