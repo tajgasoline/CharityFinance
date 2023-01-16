@@ -12,7 +12,7 @@ function onloadss(){
     var caseid = $("#id1").val();
     var AmountApplied2 = $("#AmountApplied2").val();
     var FOAmount = $("#FOAmount2").val();
-    var FORemarks2 = $("#FORemarks22").val();
+    var FORemarks2 = $("#FORemarks2").val();
   
 
     var emailc = '';

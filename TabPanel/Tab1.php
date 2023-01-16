@@ -31,7 +31,7 @@
                                                 </div>
                                                 <select class="select2 form-control mb-3 custom-select "
                                                     style="width: 100%; height:36px;" tabindex="-1" aria-hidden="true"
-                                                    disabled id="employee">
+                                                    disabled id="employment">
                                                     <option value="null" selected disabled>Select Here</option>
                                                     <option value="Employee">Employee</option>
                                                     <option value="UnEmployee">UnEmployee</option>

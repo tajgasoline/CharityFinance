@@ -116,7 +116,7 @@ $(document).ready(function () {
         $("#AmountApplied2").val($(this).data("amountapplied")); 
        
         $("#FOAmount2").val($(this).data("foamount"));
-        $("#FORemarks2").val($(this).data("foremarks2")); 
+        $("#FORemarks22").val($(this).data("foremarks2")); 
 
 
         if ($(this).data("casetype") == 'Business') {
@@ -403,7 +403,7 @@ function onloadss(){
 
     var caseid = $("#id1").val();
       var FOAmount = $("#FOAmount2").val();
-    var FORemarks2 = $("#FORemarks22").val();
+    var FORemarks2 = $("#FORemarks2").val();
   
 
     var emailc = '';

@@ -46,8 +46,6 @@ if($connect)
       data-nob="'.$row["nob"].'"
       data-nobdesc="'.$row["nobdesc"].'"
       data-city="'.$row["city"].'" 
-
-
       data-noofmales="'.$row["noofmales"].'"
       data-nooffemales="'.$row["nooffemales"].'"
       data-noofdependents="'.$row["noofdependents"].'"
@@ -59,8 +57,6 @@ if($connect)
       data-otherexpenses="'.$row["otherexpenses"].'"
       data-totalexpenses="'.$row["totalexpenses"].'"
       data-monthlysirplusdeficit="'.$row["monthlysirplusdeficit"].'"
-
-
        data-cashbank="'.$row["cashbank"].'"
       data-goldsilver="'.$row["goldsilver"].'"
       data-provisionalfund="'.$row["provisionalfund"].'"
@@ -74,7 +70,6 @@ if($connect)
       data-extravehicles="'.$row["extravehicles"].'"
       data-extralivestocks="'.$row["extralivestocks"].'"
        data-totalcountableassets="'.$row["totalcountableassets"].'"
-
        
       data-rentpayable="'.$row["rentpayable"].'"
       data-securitydepositpayable="'.$row["securitydepositpayable"].'"
@@ -108,17 +103,11 @@ if($connect)
     
       data-formid="'.$row["formid"].'"
       data-foremarks="'.$row["foremarks"].'"
-
       data-foamount="'.$row["FOAmount"].'"
       data-foremarks2="'.$row["FORemarks2"].'"
-
       
-
-
   
    
-
-
       class="mr-2 edit-modal" data-toggle="modal" data-animation="bounce" data-target=".edit-modal1" ><i class="fas fa-edit text-info font-16"></i></a></br></td>';
 
 $Action2='';
@@ -128,8 +117,6 @@ if($row["status"]=='Reimbursed'){
       id="'.$row["caseid"].'" 
       data-contact="'.$row["contact"].'"  
       data-email="'.$row["email"].'" 
-
-
       class="mr-2 payment-modal" data-toggle="modal" data-animation="bounce" data-target=".payment-modal1" ><i class="fas fa-edit text-info font-16"></i></a></br></td>';
 }
  

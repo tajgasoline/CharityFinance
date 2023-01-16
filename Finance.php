@@ -257,7 +257,7 @@ $_SESSION['role'] = 'Test Role';
                                           <div class="form-group row">
                                     <label for="example-text-input" class="col-sm-2 col-form-label text-right">Cheque Number</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control numbersOnly " type="text" placeholder="Please Enter Case Type"     id="CNumber"><span class="help-block custom-block-hide" id="12v1"><small ></small></span>
+                                        <input class="form-control numbersOnly " type="text" placeholder="Please Enter Case Type"  maxlength="34"   id="CNumber"><span class="help-block custom-block-hide" id="12v1"><small ></small></span>
                                     </div>
                                 </div> 
 
