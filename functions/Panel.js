@@ -88,7 +88,7 @@ $(document).ready(function () {
         $("#ExtraVehicles").val($(this).data("extravehicles"));
         $("#ExtraLivestocks").val($(this).data("extralivestocks"));
         $("#TotalCountableAssets").val($(this).data("totalcountableassets"));
-
+        $("#TotalCountableAssets2").val($(this).data("totalcountableassets"));
 
         $("#RentPayable").val($(this).data("rentpayable"));
         $("#SecurityDepositPayable").val($(this).data("securitydepositpayable"));
@@ -96,7 +96,7 @@ $(document).ready(function () {
         $("#UtilityBillsPayable").val($(this).data("utilitybillspayable"));
         $("#LoanPayable").val($(this).data("loanpayable"));
         $("#TotalDeductableLiabilities").val($(this).data("ttldductliabilities")); 
-
+        $("#TotalDeductableLiabiliities").val($(this).data("ttldductliabilities"));
         $("#NetCoutableAssets").val($(this).data("netcoutableassets"));
         $("#CurrentZakatEvaluation").val($(this).data("currentzakatevaluation"));
         $("#Muslim").val($(this).data("muslim"));

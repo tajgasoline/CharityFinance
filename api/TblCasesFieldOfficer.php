@@ -13,7 +13,7 @@ if ($connect) {
   if (
     !$query
   ) {
-
+ 
 
     $result = "error";
     $message = "query error";
@@ -57,7 +57,7 @@ if ($connect) {
       data-totalexpenses="' . $row["totalexpenses"] . '"
       data-monthlysirplusdeficit="' . $row["monthlysirplusdeficit"] . '"
 
-       data-cashbank="' . $row["cashbank"] . '"
+      data-cashbank="' . $row["cashbank"] . '"
       data-goldsilver="' . $row["goldsilver"] . '"
       data-provisionalfund="' . $row["provisionalfund"] . '"
       data-paidcommittee="' . $row["paidcommittee"] . '"
@@ -69,7 +69,7 @@ if ($connect) {
       data-extramobilephones="' . $row["extramobilephones"] . '"
       data-extravehicles="' . $row["extravehicles"] . '"
       data-extralivestocks="' . $row["extralivestocks"] . '"
-       data-totalcountableassets="' . $row["totalcountableassets"] . '"
+      data-totalcountableassets="' . $row["totalcountableassets"] . '"
 
 
       data-rentpayable="' . $row["rentpayable"] . '"
@@ -79,7 +79,7 @@ if ($connect) {
       data-loanpayable="' . $row["loanpayable"] . '"
       data-ttldductliabilities="' . $row["ttldductliabilities"] . '"
       data-totaldeductableliabiliities="' . $row["totaldeductableliabiliities"] . '"
-
+    
       data-netcoutableassets="' . $row["netcoutableassets"] . '"
       data-currentzakatevaluation="' . $row["currentzakatevaluation"] . '"
       data-muslim="' . $row["muslim"] . '"
@@ -96,7 +96,7 @@ if ($connect) {
       data-experience="' . $row["experience"] . '"
       data-capability="' . $row["capability"] . '"
       data-training="' . $row["training"] . '"
-       data-otherremarks="' . $row["otherremarks"] . '"
+      data-otherremarks="' . $row["otherremarks"] . '"
       data-doc="' . $row["doc"] . '"
      
       data-status="' . $row["status"] . '"
