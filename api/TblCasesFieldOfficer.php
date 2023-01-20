@@ -34,8 +34,8 @@ if ($connect) {
       data-casetype="' . $row["casetype"] . '"
       data-casedesc="' . $row["casedescription"] . '"
       data-name="' . $row["name"] . '"
-      data-fathersname="' . $row["fathersname"] . '
-      data-cnic="' . $row["cnic"] . '"
+      data-fathersname="' . $row["fathersname"] . '"
+      
 
       data-contact="' . $row["contact"] . '"
       data-email="' . $row["email"] . '"
