@@ -66,11 +66,11 @@ if (
 	&& isset($_POST["contact"]) && isset($_POST["cnic"]) && isset($_POST["casetype"])
 	&& isset($_POST["casedesc"]) && isset($_POST["NetSalary"])
 	&& isset($_POST["Address"]) && isset($_POST["natureofbusiness"]) && isset($_POST["otherbusiness"])
-	&& isset($_POST["city"])
+	&& isset($_POST["city"]) &&
 
-	// isset($_POST["AmountApplied"]) && 
-	// isset($_POST["FOAmount"]) &&  
-	// isset($_POST["FORemarks2"])
+	isset($_POST["AmountApplied"]) && 
+	isset($_POST["FOAmount"]) &&  
+	isset($_POST["FORemarks2"])
 ) {
 
 
@@ -270,7 +270,7 @@ if (
 			$stmt->execute();
 			if ($stmt == true) {
 				$last_id = $connect->insert_id;
-				$plot_approving = "UPDATE `checking` SET  `FORemarks`='" . $FORemarks2 . "',`FOAmount`='" . $FOAmount . "',`status`='Panel',`formid`='" . $last_id . "' WHERE `CaseID`=" . $id1 . "";
+				$plot_approving = "UPDATE `checking` SET  `FORemarks2`='" . $FORemarks2 . "',`FOAmount`='" . $FOAmount . "',`status`='Panel',`formid`='" . $last_id . "' WHERE `CaseID`=" . $id1 . "";
 				$run_querry = mysqli_query($connect, $plot_approving);
 				mysqli_close($connect);
 				if ($run_querry == "True") {

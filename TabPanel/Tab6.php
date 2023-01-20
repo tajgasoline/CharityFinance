@@ -36,9 +36,9 @@
                         <label for="email" class="col-sm-4 col-form-label text-align-left">Field Officer Remarks</label>
                         <div class="col-sm-8 ">
                            <div class="input-group mb-3">
-                            <textarea type="text" class="form-control" id="FORemarks2"  placeholder="Enter Field Officer Remarks"></textarea>
+                            <textarea type="text" class="form-control" id="FORemarks25"  placeholder="Enter Field Officer Remarks"></textarea>
                         </div>  <span class="help-block custom-block-hide" id="100v">
-                    </div><span class="help-block custom-block-hide" id="46v">
+                    </div><span class="help-block custom-block-hide" id="00v">
                 </div><!--end form-group--> 
      </div>
 

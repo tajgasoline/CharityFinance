@@ -36,7 +36,7 @@
                         <label for="email" class="col-sm-4 col-form-label text-align-left">Field Officer Remarks</label>
                         <div class="col-sm-8 ">
                            <div class="input-group mb-3">
-                            <textarea type="text" class="form-control" id="FORemarks22" disabled  placeholder="Enter Field Officer Remarks"></textarea>
+                            <textarea type="text" class="form-control" id="FORemarks2" disabled  placeholder="Enter Field Officer Remarks"></textarea>
                         </div>  <span class="help-block custom-block-hide" id="100v">
                     </div><span class="help-block custom-block-hide" id="46v">
                 </div><!--end form-group--> 
@@ -56,7 +56,7 @@
                         <label for="email" class="col-sm-4 col-form-label text-align-left">Panel Remarks</label>
                         <div class="col-sm-8 ">
                            <div class="input-group mb-3">
-                            <textarea type="text" class="form-control" id="PORemarks2"  placeholder="Enter Field Officer Remarks"></textarea>
+                            <textarea type="text" class="form-control" id="PORemarks2"  placeholder="Enter Panel Remarks"></textarea>
                         </div>  <span class="help-block custom-block-hide" id="100v">
                     </div><span class="help-block custom-block-hide" id="46v">
                 </div><!--end form-group--> 

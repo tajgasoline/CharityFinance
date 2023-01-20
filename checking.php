@@ -685,7 +685,7 @@ session_start();
                         <div class="form-group row">
                        <label for="example-text-input" class="col-lg-12 col-form-label  C-Modal-Data-title text-center" style="font-weight: bold;">FO Remarks</label>
                                 <div class="col-sm-5">
-                                    <input class="form-control" type="text" placeholder="Enter FO Remarks here" id="FORemarks">
+                                    <input class="form-control" type="text" placeholder="Enter FO Remarks here" id="FORemarks2">
                                     <span class="help-block custom-block-hide" id="0v1"><small></small></span>
                                 </div>
                                 <div class="col-sm-4"></div>

@@ -34,8 +34,7 @@ $(document).ready(function () {
 
     $(document).on("click", ".edit-modal", function () {
 
-
-        $("#id1").val($(this).attr("id"));
+    $("#id1").val($(this).attr("id"));
         $("#date1").val($(this).data("date"));
         $("#casetype1").val($(this).data("casetype"));
         $("#casedesc1").val($(this).data("casedesc"));
@@ -47,8 +46,9 @@ $(document).ready(function () {
         $("#status1").val($(this).data("status"));
         $("#PRemarks").val($(this).data("panelremarks"));
         $("#PAmount").val($(this).data("panelamount"));
-        $("#FOremarks1").val($(this).data("foremarks"));
+        $("#FORemarks2").val($(this).data("foremarks2"));
         $("#FOAmount1").val($(this).data("foamount"));
+
 
 
     });

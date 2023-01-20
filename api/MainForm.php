@@ -145,7 +145,7 @@ if (
 		$result = "Server Connection Error";
 	} else {
 		//Duplicate checking
-		$stmt = $connect->prepare("Select CaseID from  tblmainform where caseid = ?");
+		$stmt = $connect->prepare("Select CaseID from tblmainform where caseid = ?");
 		$stmt->bind_param('i', $id1);
 		//Executing the statement
 		$stmt->execute();

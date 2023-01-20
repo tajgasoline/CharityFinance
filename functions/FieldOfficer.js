@@ -4,369 +4,369 @@ jQuery('.numbersOnly').keyup(function () {
 
 
 
-function onloadss(){
+function onloadss() {
 
 
- 
+
 
     var caseid = $("#id1").val();
     var AmountApplied2 = $("#AmountApplied2").val();
     var FOAmount = $("#FOAmount2").val();
     var FORemarks2 = $("#FORemarks2").val();
-  
+
 
     var emailc = '';
-    if($('#emailc').is(':checked') == true){emailc = 'Yes';}
-    else {emailc = 'No';} 
+    if ($('#emailc').is(':checked') == true) { emailc = 'Yes'; }
+    else { emailc = 'No'; }
 
     var fullnamec = '';
-    if($('#fullnamec').is(':checked') == true){fullnamec = 'Yes';}
-    else {fullnamec = 'No';}
+    if ($('#fullnamec').is(':checked') == true) { fullnamec = 'Yes'; }
+    else { fullnamec = 'No'; }
 
     var fathersnamec = '';
-    if($('#fathersnamec').is(':checked') == true){fathersnamec = 'Yes';}
-    else {fathersnamec = 'No';}
+    if ($('#fathersnamec').is(':checked') == true) { fathersnamec = 'Yes'; }
+    else { fathersnamec = 'No'; }
 
     var employmentc = '';
-    if($('#employmentc').is(':checked') == true){employmentc = 'Yes';}
-    else {employmentc = 'No';}
+    if ($('#employmentc').is(':checked') == true) { employmentc = 'Yes'; }
+    else { employmentc = 'No'; }
 
     var contactc = '';
-    if($('#contactc').is(':checked') == true){contactc = 'Yes';}
-    else {contactc = 'No';}
+    if ($('#contactc').is(':checked') == true) { contactc = 'Yes'; }
+    else { contactc = 'No'; }
 
     var cityc = '';
-    if($('#cityc').is(':checked') == true){cityc = 'Yes';}
-    else {cityc = 'No';}
+    if ($('#cityc').is(':checked') == true) { cityc = 'Yes'; }
+    else { cityc = 'No'; }
 
     var NetSalaryc = '';
-    if($('#NetSalaryc').is(':checked') == true){NetSalaryc = 'Yes';}
-    else {NetSalaryc = 'No';}
+    if ($('#NetSalaryc').is(':checked') == true) { NetSalaryc = 'Yes'; }
+    else { NetSalaryc = 'No'; }
 
     var cnicc = '';
-    if($('#cnicc').is(':checked') == true){cnicc = 'Yes';}
-    else {cnicc = 'No';}
+    if ($('#cnicc').is(':checked') == true) { cnicc = 'Yes'; }
+    else { cnicc = 'No'; }
 
     var Addressc = '';
-    if($('#Addressc').is(':checked') == true){Addressc = 'Yes';}
-    else {Addressc = 'No';}
+    if ($('#Addressc').is(':checked') == true) { Addressc = 'Yes'; }
+    else { Addressc = 'No'; }
 
     var casetypec = '';
-    if($('#casetypec').is(':checked') == true){casetypec = 'Yes';}
-    else {casetypec = 'No';}
+    if ($('#casetypec').is(':checked') == true) { casetypec = 'Yes'; }
+    else { casetypec = 'No'; }
 
     var natureofbusinessc = '';
-    if($('#natureofbusinessc').is(':checked') == true){natureofbusinessc = 'Yes';}
-    else {natureofbusinessc = 'No';}
+    if ($('#natureofbusinessc').is(':checked') == true) { natureofbusinessc = 'Yes'; }
+    else { natureofbusinessc = 'No'; }
 
     var otherbusinessc = '';
-    if($('#otherbusinessc').is(':checked') == true){otherbusinessc = 'Yes';}
-    else {otherbusinessc = 'No';}
+    if ($('#otherbusinessc').is(':checked') == true) { otherbusinessc = 'Yes'; }
+    else { otherbusinessc = 'No'; }
 
     var casedescc = '';
-    if($('#casedescc').is(':checked') == true){casedescc = 'Yes';}
-    else {casedescc = 'No';}
+    if ($('#casedescc').is(':checked') == true) { casedescc = 'Yes'; }
+    else { casedescc = 'No'; }
 
 
 
 
     var NoofMalesc = '';
-    if($('#NoofMalesc').is(':checked') == true){NoofMalesc = 'Yes';}
-    else {NoofMalesc = 'No';}
+    if ($('#NoofMalesc').is(':checked') == true) { NoofMalesc = 'Yes'; }
+    else { NoofMalesc = 'No'; }
 
     var NoofFemalesc = '';
-    if($('#NoofFemalesc').is(':checked') == true){NoofFemalesc = 'Yes';}
-    else {NoofFemalesc = 'No';}
+    if ($('#NoofFemalesc').is(':checked') == true) { NoofFemalesc = 'Yes'; }
+    else { NoofFemalesc = 'No'; }
 
     var NoofDependentsc = '';
-    if($('#NoofDependentsc').is(':checked') == true){NoofDependentsc = 'Yes';}
-    else {NoofDependentsc = 'No';}
+    if ($('#NoofDependentsc').is(':checked') == true) { NoofDependentsc = 'Yes'; }
+    else { NoofDependentsc = 'No'; }
 
     var NoofPersonEarningc = '';
-    if($('#NoofPersonEarningc').is(':checked') == true){NoofPersonEarningc = 'Yes';}
-    else {NoofPersonEarningc = 'No';}
+    if ($('#NoofPersonEarningc').is(':checked') == true) { NoofPersonEarningc = 'Yes'; }
+    else { NoofPersonEarningc = 'No'; }
 
     var FamilyIncomec = '';
-    if($('#FamilyIncomec').is(':checked') == true){FamilyIncomec = 'Yes';}
-    else {FamilyIncomec = 'No';}
+    if ($('#FamilyIncomec').is(':checked') == true) { FamilyIncomec = 'Yes'; }
+    else { FamilyIncomec = 'No'; }
 
     var MonthlyRationc = '';
-    if($('#MonthlyRationc').is(':checked') == true){MonthlyRationc = 'Yes';}
-    else {MonthlyRationc = 'No';}
+    if ($('#MonthlyRationc').is(':checked') == true) { MonthlyRationc = 'Yes'; }
+    else { MonthlyRationc = 'No'; }
 
     var MonthlyHealthCarec = '';
-    if($('#MonthlyHealthCarec').is(':checked') == true){MonthlyHealthCarec = 'Yes';}
-    else {MonthlyHealthCarec = 'No';}
+    if ($('#MonthlyHealthCarec').is(':checked') == true) { MonthlyHealthCarec = 'Yes'; }
+    else { MonthlyHealthCarec = 'No'; }
 
     var MonthlyEducationc = '';
-    if($('#MonthlyEducationc').is(':checked') == true){MonthlyEducationc = 'Yes';}
-    else {MonthlyEducationc = 'No';}
+    if ($('#MonthlyEducationc').is(':checked') == true) { MonthlyEducationc = 'Yes'; }
+    else { MonthlyEducationc = 'No'; }
 
     var OtherExpensesc = '';
-    if($('#OtherExpensesc').is(':checked') == true){OtherExpensesc = 'Yes';}
-    else {OtherExpensesc = 'No';}
+    if ($('#OtherExpensesc').is(':checked') == true) { OtherExpensesc = 'Yes'; }
+    else { OtherExpensesc = 'No'; }
 
     var TotalExpensesc = '';
-    if($('#TotalExpensesc').is(':checked') == true){TotalExpensesc = 'Yes';}
-    else {TotalExpensesc = 'No';}
+    if ($('#TotalExpensesc').is(':checked') == true) { TotalExpensesc = 'Yes'; }
+    else { TotalExpensesc = 'No'; }
 
     var MonthlySirplusdeficitc = '';
-    if($('#MonthlySirplusdeficitc').is(':checked') == true){MonthlySirplusdeficitc = 'Yes';}
-    else {MonthlySirplusdeficitc = 'No';}
+    if ($('#MonthlySirplusdeficitc').is(':checked') == true) { MonthlySirplusdeficitc = 'Yes'; }
+    else { MonthlySirplusdeficitc = 'No'; }
 
 
 
 
     var CashBankc = '';
-    if($('#CashBankc').is(':checked') == true){CashBankc = 'Yes';}
-    else {CashBankc = 'No';}
+    if ($('#CashBankc').is(':checked') == true) { CashBankc = 'Yes'; }
+    else { CashBankc = 'No'; }
 
     var GoldSilverc = '';
-    if($('#GoldSilverc').is(':checked') == true){GoldSilverc = 'Yes';}
-    else {GoldSilverc = 'No';}
+    if ($('#GoldSilverc').is(':checked') == true) { GoldSilverc = 'Yes'; }
+    else { GoldSilverc = 'No'; }
 
     var ProvisionalFundc = '';
-    if($('#ProvisionalFundc').is(':checked') == true){ProvisionalFundc = 'Yes';}
-    else {ProvisionalFundc = 'No';}
+    if ($('#ProvisionalFundc').is(':checked') == true) { ProvisionalFundc = 'Yes'; }
+    else { ProvisionalFundc = 'No'; }
 
     var PaidCommitteec = '';
-    if($('#PaidCommitteec').is(':checked') == true){PaidCommitteec = 'Yes';}
-    else {PaidCommitteec = 'No';}
+    if ($('#PaidCommitteec').is(':checked') == true) { PaidCommitteec = 'Yes'; }
+    else { PaidCommitteec = 'No'; }
 
     var SecurityDepositc = '';
-    if($('#SecurityDepositc').is(':checked') == true){SecurityDepositc = 'Yes';}
-    else {SecurityDepositc = 'No';}
+    if ($('#SecurityDepositc').is(':checked') == true) { SecurityDepositc = 'Yes'; }
+    else { SecurityDepositc = 'No'; }
 
     var LoanGivenc = '';
-    if($('#LoanGivenc').is(':checked') == true){LoanGivenc = 'Yes';}
-    else {LoanGivenc = 'No';}
+    if ($('#LoanGivenc').is(':checked') == true) { LoanGivenc = 'Yes'; }
+    else { LoanGivenc = 'No'; }
 
     var OtherCurrencyc = '';
-    if($('#OtherCurrencyc').is(':checked') == true){OtherCurrencyc = 'Yes';}
-    else {OtherCurrencyc = 'No';}
+    if ($('#OtherCurrencyc').is(':checked') == true) { OtherCurrencyc = 'Yes'; }
+    else { OtherCurrencyc = 'No'; }
 
     var TradeAssetsc = '';
-    if($('#TradeAssetsc').is(':checked') == true){TradeAssetsc = 'Yes';}
-    else {TradeAssetsc = 'No';}
+    if ($('#TradeAssetsc').is(':checked') == true) { TradeAssetsc = 'Yes'; }
+    else { TradeAssetsc = 'No'; }
 
     var UnnecessaryFlatsc = '';
-    if($('#UnnecessaryFlatsc').is(':checked') == true){UnnecessaryFlatsc = 'Yes';}
-    else {UnnecessaryFlatsc = 'No';}
+    if ($('#UnnecessaryFlatsc').is(':checked') == true) { UnnecessaryFlatsc = 'Yes'; }
+    else { UnnecessaryFlatsc = 'No'; }
 
     var ExtraMobilePhonesc = '';
-    if($('#ExtraMobilePhonesc').is(':checked') == true){ExtraMobilePhonesc = 'Yes';}
-    else {ExtraMobilePhonesc = 'No';}
+    if ($('#ExtraMobilePhonesc').is(':checked') == true) { ExtraMobilePhonesc = 'Yes'; }
+    else { ExtraMobilePhonesc = 'No'; }
 
     var ExtraVehiclesc = '';
-    if($('#ExtraVehiclesc').is(':checked') == true){ExtraVehiclesc = 'Yes';}
-    else {ExtraVehiclesc = 'No';}
+    if ($('#ExtraVehiclesc').is(':checked') == true) { ExtraVehiclesc = 'Yes'; }
+    else { ExtraVehiclesc = 'No'; }
 
     var ExtraLivestocksc = '';
-    if($('#ExtraLivestocksc').is(':checked') == true){ExtraLivestocksc = 'Yes';}
-    else {ExtraLivestocksc = 'No';}
+    if ($('#ExtraLivestocksc').is(':checked') == true) { ExtraLivestocksc = 'Yes'; }
+    else { ExtraLivestocksc = 'No'; }
 
     var TotalCountableAssetsc = '';
-    if($('#TotalCountableAssetsc').is(':checked') == true){TotalCountableAssetsc = 'Yes';}
-    else {TotalCountableAssetsc = 'No';}
+    if ($('#TotalCountableAssetsc').is(':checked') == true) { TotalCountableAssetsc = 'Yes'; }
+    else { TotalCountableAssetsc = 'No'; }
 
 
 
 
     var RentPayablec = '';
-    if($('#RentPayablec').is(':checked') == true){RentPayablec = 'Yes';}
-    else {RentPayablec = 'No';}
+    if ($('#RentPayablec').is(':checked') == true) { RentPayablec = 'Yes'; }
+    else { RentPayablec = 'No'; }
 
     var SecurityDepositPayablec = '';
-    if($('#SecurityDepositPayablec').is(':checked') == true){SecurityDepositPayablec = 'Yes';}
-    else {SecurityDepositPayablec = 'No';}
+    if ($('#SecurityDepositPayablec').is(':checked') == true) { SecurityDepositPayablec = 'Yes'; }
+    else { SecurityDepositPayablec = 'No'; }
 
     var PayableAmountCommitteec = '';
-    if($('#PayableAmountCommitteec').is(':checked') == true){PayableAmountCommitteec = 'Yes';}
-    else {PayableAmountCommitteec = 'No';}
+    if ($('#PayableAmountCommitteec').is(':checked') == true) { PayableAmountCommitteec = 'Yes'; }
+    else { PayableAmountCommitteec = 'No'; }
 
     var UtilityBillsPayablec = '';
-    if($('#UtilityBillsPayablec').is(':checked') == true){UtilityBillsPayablec = 'Yes';}
-    else {UtilityBillsPayablec = 'No';}
+    if ($('#UtilityBillsPayablec').is(':checked') == true) { UtilityBillsPayablec = 'Yes'; }
+    else { UtilityBillsPayablec = 'No'; }
 
     var LoanPayablec = '';
-    if($('#LoanPayablec').is(':checked') == true){LoanPayablec = 'Yes';}
-    else {LoanPayablec = 'No';}
+    if ($('#LoanPayablec').is(':checked') == true) { LoanPayablec = 'Yes'; }
+    else { LoanPayablec = 'No'; }
 
     var TotalDeductableLiabilitiesc = '';
-    if($('#TotalDeductableLiabilitiesc').is(':checked') == true){TotalDeductableLiabilitiesc = 'Yes';}
-    else {TotalDeductableLiabilitiesc = 'No';}
+    if ($('#TotalDeductableLiabilitiesc').is(':checked') == true) { TotalDeductableLiabilitiesc = 'Yes'; }
+    else { TotalDeductableLiabilitiesc = 'No'; }
 
 
 
     var TotalCountableAssets2c = '';
-    if($('#TotalCountableAssets2c').is(':checked') == true){TotalCountableAssets2c = 'Yes';}
-    else {TotalCountableAssets2c = 'No';}
+    if ($('#TotalCountableAssets2c').is(':checked') == true) { TotalCountableAssets2c = 'Yes'; }
+    else { TotalCountableAssets2c = 'No'; }
 
     var TotalDeductableLiabiliitiesc = '';
-    if($('#TotalDeductableLiabiliitiesc').is(':checked') == true){TotalDeductableLiabiliitiesc = 'Yes';}
-    else {TotalDeductableLiabiliitiesc = 'No';}
+    if ($('#TotalDeductableLiabiliitiesc').is(':checked') == true) { TotalDeductableLiabiliitiesc = 'Yes'; }
+    else { TotalDeductableLiabiliitiesc = 'No'; }
 
     var NetCoutableAssetsc = '';
-    if($('#NetCoutableAssetsc').is(':checked') == true){NetCoutableAssetsc = 'Yes';}
-    else {NetCoutableAssetsc = 'No';}
+    if ($('#NetCoutableAssetsc').is(':checked') == true) { NetCoutableAssetsc = 'Yes'; }
+    else { NetCoutableAssetsc = 'No'; }
 
     var CurrentZakatEvaluationc = '';
-    if($('#CurrentZakatEvaluationc').is(':checked') == true){CurrentZakatEvaluationc = 'Yes';}
-    else {CurrentZakatEvaluationc = 'No';}
+    if ($('#CurrentZakatEvaluationc').is(':checked') == true) { CurrentZakatEvaluationc = 'Yes'; }
+    else { CurrentZakatEvaluationc = 'No'; }
 
     var Muslimc = '';
-    if($('#Muslimc').is(':checked') == true){Muslimc = 'Yes';}
-    else {Muslimc = 'No';}
+    if ($('#Muslimc').is(':checked') == true) { Muslimc = 'Yes'; }
+    else { Muslimc = 'No'; }
 
 
     var Syedc = '';
-    if($('#Syedc').is(':checked') == true){Syedc = 'Yes';}
-    else {Syedc = 'No';}
+    if ($('#Syedc').is(':checked') == true) { Syedc = 'Yes'; }
+    else { Syedc = 'No'; }
 
 
     var AgaKanic = '';
-    if($('#AgaKanic').is(':checked') == true){AgaKanic = 'Yes';}
-    else {AgaKanic = 'No';}
+    if ($('#AgaKanic').is(':checked') == true) { AgaKanic = 'Yes'; }
+    else { AgaKanic = 'No'; }
 
 
     var ZakatEvaluationc = '';
-    if($('#ZakatEvaluationc').is(':checked') == true){ZakatEvaluationc = 'Yes';}
-    else {ZakatEvaluationc = 'No';}
+    if ($('#ZakatEvaluationc').is(':checked') == true) { ZakatEvaluationc = 'Yes'; }
+    else { ZakatEvaluationc = 'No'; }
 
 
 
 
     var ExecutiveRelationshipc = '';
-    if($('#ExecutiveRelationshipc').is(':checked') == true){ExecutiveRelationshipc = 'Yes';}
-    else {ExecutiveRelationshipc = 'No';}
+    if ($('#ExecutiveRelationshipc').is(':checked') == true) { ExecutiveRelationshipc = 'Yes'; }
+    else { ExecutiveRelationshipc = 'No'; }
 
     var ReferenceNamec = '';
-    if($('#ReferenceNamec').is(':checked') == true){ReferenceNamec = 'Yes';}
-    else {ReferenceNamec = 'No';}
+    if ($('#ReferenceNamec').is(':checked') == true) { ReferenceNamec = 'Yes'; }
+    else { ReferenceNamec = 'No'; }
 
     var RefferedByc = '';
-    if($('#RefferedByc').is(':checked') == true){RefferedByc = 'Yes';}
-    else {RefferedByc = 'No';}
+    if ($('#RefferedByc').is(':checked') == true) { RefferedByc = 'Yes'; }
+    else { RefferedByc = 'No'; }
 
     var Intensionc = '';
-    if($('#Intensionc').is(':checked') == true){Intensionc = 'Yes';}
-    else {Intensionc = 'No';}
+    if ($('#Intensionc').is(':checked') == true) { Intensionc = 'Yes'; }
+    else { Intensionc = 'No'; }
 
     var Experiencec = '';
-    if($('#Experiencec').is(':checked') == true){Experiencec = 'Yes';}
-    else {Experiencec = 'No';}
+    if ($('#Experiencec').is(':checked') == true) { Experiencec = 'Yes'; }
+    else { Experiencec = 'No'; }
 
     var Capabilityc = '';
-    if($('#Capabilityc').is(':checked') == true){Capabilityc = 'Yes';}
-    else {Capabilityc = 'No';}
+    if ($('#Capabilityc').is(':checked') == true) { Capabilityc = 'Yes'; }
+    else { Capabilityc = 'No'; }
 
     var Trainingc = '';
-    if($('#Trainingc').is(':checked') == true){Trainingc = 'Yes';}
-    else {Trainingc = 'No';}
+    if ($('#Trainingc').is(':checked') == true) { Trainingc = 'Yes'; }
+    else { Trainingc = 'No'; }
 
     var OtherRemarksc = '';
-    if($('#OtherRemarksc').is(':checked') == true){OtherRemarksc = 'Yes';}
-    else {OtherRemarksc = 'No';}
+    if ($('#OtherRemarksc').is(':checked') == true) { OtherRemarksc = 'Yes'; }
+    else { OtherRemarksc = 'No'; }
 
     $.ajax({
         url: "api/FOChecking.php",
         method: "POST",
         data: {
-          caseid:caseid,
-           emailc:emailc,
-                  fullnamec:fullnamec,
-                  fathersnamec:fathersnamec,
-                  employmentc:employmentc,
-                  contactc:contactc,
-                  cityc:cityc,
-                  NetSalaryc:NetSalaryc,
-                  cnicc:cnicc,
-                  Addressc:Addressc,
-                  casetypec:casetypec,
-                  natureofbusinessc:natureofbusinessc,
-                  otherbusinessc:otherbusinessc,
-                  casedescc:casedescc,
-                  NoofMalesc:NoofMalesc,
-                  NoofFemalesc:NoofFemalesc,
-                  NoofDependentsc:NoofDependentsc,
-                  NoofPersonEarningc:NoofPersonEarningc,
-                  FamilyIncomec:FamilyIncomec,
-                  MonthlyRationc:MonthlyRationc,
-                  MonthlyHealthCarec:MonthlyHealthCarec,
-                  MonthlyEducationc:MonthlyEducationc,
-                  OtherExpensesc:OtherExpensesc,
-                  TotalExpensesc:TotalExpensesc,
-                  MonthlySirplusdeficitc:MonthlySirplusdeficitc,
-                  CashBankc:CashBankc,
-                  GoldSilverc:GoldSilverc,
-                  ProvisionalFundc:ProvisionalFundc,
-                  PaidCommitteec:PaidCommitteec,
-                  SecurityDepositc:SecurityDepositc,
-                  LoanGivenc:LoanGivenc,
-                  OtherCurrencyc:OtherCurrencyc,
-                  TradeAssetsc:TradeAssetsc,
-                  UnnecessaryFlatsc:UnnecessaryFlatsc,
-                  ExtraMobilePhonesc:ExtraMobilePhonesc,
-                  ExtraVehiclesc:ExtraVehiclesc,
-                  ExtraLivestocksc:ExtraLivestocksc,
-                  TotalCountableAssetsc:TotalCountableAssetsc,
-                  RentPayablec:RentPayablec,
-                  SecurityDepositPayablec:SecurityDepositPayablec,
-                  PayableAmountCommitteec:PayableAmountCommitteec,
-                  UtilityBillsPayablec:UtilityBillsPayablec,
-                  LoanPayablec:LoanPayablec,
-                  TotalDeductableLiabilitiesc:TotalDeductableLiabilitiesc,
-                  TotalCountableAssets2c:TotalCountableAssets2c,
-                  TotalDeductableLiabiliitiesc:TotalDeductableLiabiliitiesc,
-                  NetCoutableAssetsc:NetCoutableAssetsc,
-                  CurrentZakatEvaluationc:CurrentZakatEvaluationc,
-                  Muslimc:Muslimc,
-                  Syedc:Syedc,
-                  AgaKanic:AgaKanic,
-                  ZakatEvaluationc:ZakatEvaluationc,
-                  ExecutiveRelationshipc:ExecutiveRelationshipc,
-                  ReferenceNamec:ReferenceNamec,
-                  RefferedByc:RefferedByc,
-                  Intensionc:Intensionc,
-                  Experiencec:Experiencec,
-                  Capabilityc:Capabilityc,
-                  Trainingc:Trainingc,
-                  OtherRemarksc:OtherRemarksc,
-                  FOAmount:FOAmount,
-                    FORemarks2:FORemarks2,
-                    AmountApplied2:AmountApplied2
-                  
-     },
-     dataType: "JSON",
-     success: function (data) {
-        var result = data.result;
+            caseid: caseid,
+            emailc: emailc,
+            fullnamec: fullnamec,
+            fathersnamec: fathersnamec,
+            employmentc: employmentc,
+            contactc: contactc,
+            cityc: cityc,
+            NetSalaryc: NetSalaryc,
+            cnicc: cnicc,
+            Addressc: Addressc,
+            casetypec: casetypec,
+            natureofbusinessc: natureofbusinessc,
+            otherbusinessc: otherbusinessc,
+            casedescc: casedescc,
+            NoofMalesc: NoofMalesc,
+            NoofFemalesc: NoofFemalesc,
+            NoofDependentsc: NoofDependentsc,
+            NoofPersonEarningc: NoofPersonEarningc,
+            FamilyIncomec: FamilyIncomec,
+            MonthlyRationc: MonthlyRationc,
+            MonthlyHealthCarec: MonthlyHealthCarec,
+            MonthlyEducationc: MonthlyEducationc,
+            OtherExpensesc: OtherExpensesc,
+            TotalExpensesc: TotalExpensesc,
+            MonthlySirplusdeficitc: MonthlySirplusdeficitc,
+            CashBankc: CashBankc,
+            GoldSilverc: GoldSilverc,
+            ProvisionalFundc: ProvisionalFundc,
+            PaidCommitteec: PaidCommitteec,
+            SecurityDepositc: SecurityDepositc,
+            LoanGivenc: LoanGivenc,
+            OtherCurrencyc: OtherCurrencyc,
+            TradeAssetsc: TradeAssetsc,
+            UnnecessaryFlatsc: UnnecessaryFlatsc,
+            ExtraMobilePhonesc: ExtraMobilePhonesc,
+            ExtraVehiclesc: ExtraVehiclesc,
+            ExtraLivestocksc: ExtraLivestocksc,
+            TotalCountableAssetsc: TotalCountableAssetsc,
+            RentPayablec: RentPayablec,
+            SecurityDepositPayablec: SecurityDepositPayablec,
+            PayableAmountCommitteec: PayableAmountCommitteec,
+            UtilityBillsPayablec: UtilityBillsPayablec,
+            LoanPayablec: LoanPayablec,
+            TotalDeductableLiabilitiesc: TotalDeductableLiabilitiesc,
+            TotalCountableAssets2c: TotalCountableAssets2c,
+            TotalDeductableLiabiliitiesc: TotalDeductableLiabiliitiesc,
+            NetCoutableAssetsc: NetCoutableAssetsc,
+            CurrentZakatEvaluationc: CurrentZakatEvaluationc,
+            Muslimc: Muslimc,
+            Syedc: Syedc,
+            AgaKanic: AgaKanic,
+            ZakatEvaluationc: ZakatEvaluationc,
+            ExecutiveRelationshipc: ExecutiveRelationshipc,
+            ReferenceNamec: ReferenceNamec,
+            RefferedByc: RefferedByc,
+            Intensionc: Intensionc,
+            Experiencec: Experiencec,
+            Capabilityc: Capabilityc,
+            Trainingc: Trainingc,
+            OtherRemarksc: OtherRemarksc,
+            FOAmount: FOAmount,
+            FORemarks2: FORemarks2,
+            AmountApplied2: AmountApplied2
 
-        if (result == "Inserted") {
+        },
+        dataType: "JSON",
+        success: function (data) {
+            var result = data.result;
+
+            if (result == "Inserted") {
                 Swal.fire({
-                title: "Action Performed Successfully",
-                type: "success",
-                timer: 6000,
-                showConfirmButton: true,
-            })
-            $("#btncancel").trigger("click");
-            $("#datatable").DataTable().destroy();
-            tblcases();
+                    title: "Action Performed Successfully",
+                    type: "success",
+                    timer: 6000,
+                    showConfirmButton: true,
+                })
+                $("#btncancel").trigger("click");
+                $("#datatable").DataTable().destroy();
+                tblcases();
+            }
+            else {
+                Swal.fire({
+                    title: "Opps! Some Error Occured!",
+                    type: "error",
+                    text: "Please login first",
+                    timer: 4000,
+                    showConfirmButton: true,
+                })
+                $("#btncancel").trigger("click");
+                $("#datatable").DataTable().destroy();
+                tblcases();
+            }
+            return data;
         }
-        else {
-            Swal.fire({
-                title: "Opps! Some Error Occured!",
-                type: "error",
-                text: "Please login first",
-                timer: 4000,
-                showConfirmButton: true,
-            })
-            $("#btncancel").trigger("click");
-            $("#datatable").DataTable().destroy();
-            tblcases();
-        }
-        return data;
-    }
-});
+    });
 
 
 
@@ -376,7 +376,7 @@ function onloadss(){
 
 
 function switching(value) {
- 
+
     $("#" + value + "-button").prop("disabled", false);
     if (value == "page1") {
         $("#page1").css("display", "inline");
@@ -676,9 +676,9 @@ function btnclosecase() {
         url: "api/OtpSuccess.php",
         method: "POST",
         data: {
-            otpemail:otpemail,
-                        otpid:otpid,
-                        OTP:OTP
+            otpemail: otpemail,
+            otpid: otpid,
+            OTP: OTP
         },
         dataType: "JSON",
         success: function (data) {
@@ -720,7 +720,7 @@ function tblcases() {
     $("#datatable").DataTable({
         "ajax": "api/TblCasesFieldOfficer.php",
         "columns": [
-            { "data": "Empty" }, 
+            { "data": "Empty" },
             { "data": "CaseID" },
             { "data": "DOC" },
             { "data": "casetype" },
@@ -735,7 +735,7 @@ function tblcases() {
 
 
 
-            ],
+        ],
     });
 
 }
@@ -762,18 +762,18 @@ $(document).ready(function () {
         $("#employment").val($(this).data("employment"));
         $("#contact").val($(this).data("contact"));
         $("#cnic").val($(this).data("cnic"));
-        $("#casetype").val($(this).data("casetype")); 
+        $("#casetype").val($(this).data("casetype"));
         $("#casedesc").val($(this).data("casedesc"));
         $("#NetSalary").val($(this).data("netsalary"));
         $("#Address").val($(this).data("address"));
         $("#natureofbusiness").val($(this).data("nob"));
         $("#otherbusiness").val($(this).data("nobdesc"));
-        $("#city").val($(this).data("city")); 
+        $("#city").val($(this).data("city"));
 
 
 
 
-        $("#NoofMales").val($(this).data("noofmales")); 
+        $("#NoofMales").val($(this).data("noofmales"));
         $("#NoofFemales").val($(this).data("nooffemales"));
         $("#NoofDependents").val($(this).data("noofdependents"));
         $("#NoofPersonEarning").val($(this).data("noofpersonearning"));
@@ -785,13 +785,13 @@ $(document).ready(function () {
         $("#TotalExpenses").val($(this).data("totalexpenses"));
         $("#MonthlySirplusdeficit").val($(this).data("monthlysirplusdeficit"));
 
-        $("#CashBank").val($(this).data("cashbank")); 
+        $("#CashBank").val($(this).data("cashbank"));
         $("#GoldSilver").val($(this).data("goldsilver"));
         $("#ProvisionalFund").val($(this).data("provisionalfund"));
         $("#PaidCommittee").val($(this).data("paidcommittee"));
         $("#SecurityDeposit").val($(this).data("securitydeposit"));
         $("#LoanGiven").val($(this).data("loangiven"));
-        $("#OtherCurrency").val($(this).data("othercurrency")); 
+        $("#OtherCurrency").val($(this).data("othercurrency"));
         $("#TradeAssets").val($(this).data("tradeassets"));
         $("#UnnecessaryFlats").val($(this).data("unnecessaryflats"));
         $("#ExtraMobilePhones").val($(this).data("extramobilephones"));
@@ -805,23 +805,23 @@ $(document).ready(function () {
         $("#PayableAmountCommittee").val($(this).data("payableamountcommittee"));
         $("#UtilityBillsPayable").val($(this).data("utilitybillspayable"));
         $("#LoanPayable").val($(this).data("loanpayable"));
-        $("#TotalDeductableLiabilities").val($(this).data("ttldductliabilities")); 
+        $("#TotalDeductableLiabilities").val($(this).data("ttldductliabilities"));
 
         $("#NetCoutableAssets").val($(this).data("netcoutableassets"));
         $("#CurrentZakatEvaluation").val($(this).data("currentzakatevaluation"));
         $("#Muslim").val($(this).data("muslim"));
         $("#Syed").val($(this).data("syed"));
         $("#AgaKani").val($(this).data("agakani"));
-        $("#ZakatEvaluation").val($(this).data("zakatevaluation")); 
+        $("#ZakatEvaluation").val($(this).data("zakatevaluation"));
 
         $("#ExecutiveRelationship").val($(this).data("executiverelationship"));
         $("#ReferenceName").val($(this).data("referencename"));
         $("#RefferedBy").val($(this).data("refferedby"));
         $("#Intension").val($(this).data("intension"));
         $("#Experience").val($(this).data("experience"));
-        $("#Capability").val($(this).data("capability")); 
+        $("#Capability").val($(this).data("capability"));
         $("#Training").val($(this).data("training"));
-        $("#OtherRemarks").val($(this).data("otherremarks")); 
+        $("#OtherRemarks").val($(this).data("otherremarks"));
 
 
 
@@ -1105,6 +1105,7 @@ function btnsubmit() {
     $("#54v").css("display", "");
     $("#employment").css("border-color", "");
     $("#66v").css("display", "");
+
     // ExecutiveRelationship
     // ReferenceName
     // RefferedBy
@@ -1438,8 +1439,8 @@ function btnsubmit() {
     } else if (Intension == "") {
         $("#50v").css("display", "block");
         $("#50v").text("Please Enter Valid Intension .");
-        $("#FORemarks2").css("border-color", "red");
-        $("#FORemarks2").focus();
+        $("#Intension").css("border-color", "red");
+        $("#Intension").focus();
     } else if (Experience == "") {
         $("#51v").css("display", "block");
         $("#51v").text("Please Enter Valid Experience .");
@@ -1468,6 +1469,7 @@ function btnsubmit() {
         $("#employment").css("border-color", "red");
         $("#employment").focus();
     }
+
 
     else {
     }
@@ -1543,7 +1545,7 @@ function btnsubmit() {
                     Capability: Capability,
                     Training: Training,
                     OtherRemarks: OtherRemarks
-                    
+
 
                 },
                 dataType: "JSON",

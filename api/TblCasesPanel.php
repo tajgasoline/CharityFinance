@@ -102,9 +102,9 @@ if($connect)
       data-panelamount="'.$row["panelamount"].'"
     
       data-formid="'.$row["formid"].'"
-      data-foremarks="'.$row["foremarks"].'"
+      data-foremarks2="'.$row["foremarks2"].'"
       data-foamount="'.$row["FOAmount"].'"
-      data-foremarks2="'.$row["FORemarks2"].'"
+     
       
   
    

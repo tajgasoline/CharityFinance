@@ -1294,8 +1294,8 @@ function btnsubmit2() {
     } else if (Intension == "") {
         $("#50v").css("display", "block");
         $("#50v").text("Please Enter Valid Intension .");
-        $("#FORemarks2").css("border-color", "red");
-        $("#FORemarks2").focus();
+        $("#Intension").css("border-color", "red");
+        $("#Intension").focus();
     } else if (Experience == "") {
         $("#51v").css("display", "block");
         $("#51v").text("Please Enter Valid Experience .");

@@ -9,8 +9,8 @@ if( isset($_POST["id"]) && isset($_POST["CNumber"]) && isset($_POST["CAmount"])
 	$CRName = htmlentities($_POST["CRName"]); 
 	$CRCnic = htmlentities($_POST["CRCnic"]);
 	$bankname = htmlentities($_POST["bankname"]);
-		$CashAmount = htmlentities($_POST["CashAmount"]);
-		$PaymentType = htmlentities($_POST["PaymentType"]);
+	$CashAmount = htmlentities($_POST["CashAmount"]);
+	$PaymentType = htmlentities($_POST["PaymentType"]);
 
 
 
